@@ -3,7 +3,6 @@
 ![Luke SKywalker vecht tegen Darth Vader in Cloud City](readme-images/star-wars-remix-song.jpeg "Luke SKywalker vecht tegen Darth Vader in Cloud City")
 
 
-
 ## Ontwerper: 
 Jasper Riepe
 
@@ -23,7 +22,7 @@ blauw
   ### Je ambitie:
 
 - Ik wil werken aan het beter begrijpen en gebruiken van HTML en CSS
-- Als tweede wil ik werken aan het beter verwerken en gebruiken van de gekregen feedback om tot een beter resultaat te komen.
+- Ik vind het belangrijk om een beter inzicht te krijgen in hoe de verschillende CSS elementen gebruikt kunnen worden om tot een gewenst resultaat te komen.
  
 </details>
 
@@ -37,7 +36,7 @@ blauw
 
   ### Bevindingen:
 
-  - Kijk goed waar je je informatie gaat neerzetten en maak deze ook infomratief.
+  - Kijk goed waar je je informatie gaat neerzetten en maak deze ook informatief.
   - Hele scherm benutten, leuk om naar links en rechts te scrollen of naar beneden.
   - Interactief lightsaber wanneer je scrollt, dat hij langer wordt.
   - Sounds toevoegen aan de lightsabers.
@@ -46,9 +45,9 @@ blauw
   - LEGO Star Wars lightsaber toevoegen.
   - Achtergrond zwart met wat fonkelende sterretjes
 
-  #### oplossing:
- Tijdens de feedback van een andere student, heb ik veel nieuwe en goeie ideeën gekregen. Zo moet ik goed gaan nadenken waar ik mijn infomratie neerzet. Dit wil ik graag interactief houden, dus de plek is belangrijk. Daarnaast moet ik een besluit nemen hoe ik de hele pagina wil gaan vullen. Naar beneden scrollen of links en rechts? 
- 
+  ### oplossingen:
+ Tijdens de feedback van een andere student, heb ik veel nieuwe en goeie ideeën gekregen. Zo moet ik goed gaan nadenken waar ik mijn infomratie neerzet. Dit wil ik graag interactief houden, dus de plek is belangrijk. Daarnaast moet ik een besluit nemen hoe ik de hele pagina wil gaan vullen. Naar beneden scrollen of links en rechts?
+
  Als volgt is het toevoegen van geluiden een *must have*. Lightsabers hebben een enorm uniek geluid, een die elk persoon wel kan herkennen. Deze wil ik dus enorm graag toepassen. Dit geldt ook voor quotes van karakters uit de film of series of andere speciale geluiden.
 
  Ik zit ook al na te denken over een opstart animatie. Dus als je de website aanklikt en voor het eerst bekijkt, dat er een aantal afbeeldingen van lightsaber vecht scènes in beeld komen, dan langzaam het woord **Star Wars** en vervolgens verdwijnt het allemaal en verschijnen de lightabers. Door lightsabers te laten zien vooraf, weet de gebruiker sneller dat het over lightsabers gaat.
@@ -151,8 +150,6 @@ blauw
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+1. Afbeelding voor de favicon: https://www.freeimages.com/nl/psd/light-saber-handle-psd-5149199?ref=vectorhq (gratis afbeelding).
 
 </details>

@@ -7,11 +7,12 @@
   box-sizing:border-box;  
   margin:0;
 	padding:0;
+  
 }
 
 body {
   margin:0;
-  background-color: rgb(82, 79, 79);
+  background-color: rgb(99, 97, 97);
   text-align: center; 
   place-content: center;
 }
@@ -30,9 +31,6 @@ button:not([disabled]) {
 }
 
 
-
-
-
 /********************/
 /* ALGEMENE STYLING */
 /********************/
@@ -41,11 +39,12 @@ h1 {
   color:yellow;
   display:grid;
   justify-content: center;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 p{
   color: yellow;
-  font-family: starjedi;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 ol {
@@ -53,8 +52,8 @@ ol {
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 4em;
-  gap: 1em;
+  padding: 2em;
+  gap: 3em;
   
 }
 
@@ -65,6 +64,7 @@ ol > li {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: -1;
 }
 
 li {
@@ -152,4 +152,102 @@ ol li:nth-of-type(2) ul {
   width: 20em;
   height: 2em;
   margin: auto;
+}
+
+/* .container {
+  display: flex;
+  justify-content: center;
+}
+*/
+
+/* .flexbox-item {
+  flex-direction: row; 
+}  */
+
+.saberhilt {
+  position: relative;
+  background-color: rgb(140, 140, 141);
+  width: 25em;
+  height: 4em;
+  clip-path: polygon(43% 0, 100% 0, 100% 30%, 81% 46%, 77% 76%, 75% 100%, 0 100%, 0 0);
+  left: 4em; 
+  box-shadow: inset 0 0 10px white;
+}
+
+.stripe1 {
+  position: relative;
+  background-color: rgb(19, 18, 18);
+  height: 0.75em;
+  width: 10em;
+  bottom: 4.3em;
+  left: 4.5em;
+}
+
+.stripe2 {
+  position: relative;
+  background-color: rgb(19, 18, 18);
+  height: 0.75em;
+  width: 10em;
+  bottom: 3.75em;
+  left: 4.5em;
+}
+
+.stripe3 {
+  position: relative;
+  background-color: rgb(19, 18, 18);
+  height: 0.75em;
+  width: 10em;
+  bottom: 3.1em;
+  left: 4.5em;
+}
+
+.stripe4 {
+  position: relative;
+  background-color: rgb(19, 18, 18);
+  height: 0.75em;
+  width: 10em;
+  bottom: 2.55em;
+  left: 4.5em;
+}
+
+.connect {
+  position: relative;
+  background-color: rgb(19, 18, 18);
+  height: 4em;
+  width: 2em;
+  bottom: 3.7em;
+  left: 16em;
+  clip-path: polygon(0 0, 100% 0, 100% 49%, 66% 49%, 66% 100%, 0 100%, 0% 30%);
+  margin: 0em;
+}
+
+.button {
+  position: relative;
+  margin: 0em;
+  height: 1em;
+  width: 2em;
+  bottom: 8.7em;
+  right: -13em;
+  background-color: rgb(19, 18, 18);
+  clip-path: polygon(0 31%, 100% 31%, 100% 68%, 70% 68%, 70% 100%, 29% 100%, 29% 67%, 0 67%);
+}
+
+.blade {
+  position: relative;
+  margin: 0em;
+  height: 3em;
+  width: 11em;
+  bottom: 8em;
+  left: 17em;
+  background: linear-gradient(1turn, #0413df, #0413df, #ebf8e1, #0413df, #0413df);
+  z-index: -1;
+  box-shadow: 10px 0px 1em 5px rgb(2, 2, 204);
+  
+}
+
+@keyframes BlueOn {
+
+  0%  {background-color: none;}
+
+  100%  {background-color: Blue; }
 }
