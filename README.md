@@ -1,40 +1,29 @@
-# Procesverslag
-Markdown is een simpele manier om HTML te schrijven.  
-Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+# Procesverslag voor de tijdlijn website
 
-Nb. De standaardstructuur en de spartaanse opmaak van de README.md zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
-
-Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard open zetten. Fijn om dat steeds voor de relevante stuk(ken) te doen.
+![Luke SKywalker vecht tegen Darth Vader in Cloud City](readme-images/star-wars-remix-song.jpeg "Luke SKywalker vecht tegen Darth Vader in Cloud City")
 
 
 
+## Ontwerper: 
+Jasper Riepe
 
-## Jij
+## Je startniveau:
+blauw
 
-### Ontwerper:
-Sanne 't Hooft (vervangen door jouw naam)
-
-#### Je startniveau:
-Mijn startniveau is: hier je startniveau (kies uit zwart, rood óf blauw)
-
-
-
-
-# Je plan
+# Mijn progressie
 
 <details open>
   <summary>De eerste versie/schets van je ontwerp & je persoonlijke uitdaging</summary>
 
   ### De eerste versie/schets:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="eerste versie/schets">
+  ![](readme-images/20221031_225448.jpg)
 
+  ### Tweede versie van mijn schets na feedback
 
-  ### Je ambitie: 
-  Aan deze technieken/punten wil ik werken:
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  ### Je ambitie:
+
+- Ik wil werken aan het beter begrijpen en gebruiken van HTML en CSS
+- Als tweede wil ik werken aan het beter verwerken en gebruiken van de gekregen feedback om tot een beter resultaat te komen.
  
 </details>
 
@@ -44,26 +33,29 @@ Mijn startniveau is: hier je startniveau (kies uit zwart, rood óf blauw)
 ## Voortgang/Feedback 1
 
 <details>
-  <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
+  <summary>Samenvatting van de eerste feedback (1 nov. 2022)</summary>
 
-  ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  ### Bevindingen:
+
+  - Kijk goed waar je je informatie gaat neerzetten en maak deze ook infomratief.
+  - Hele scherm benutten, leuk om naar links en rechts te scrollen of naar beneden.
+  - Interactief lightsaber wanneer je scrollt, dat hij langer wordt.
+  - Sounds toevoegen aan de lightsabers.
+  - Misschien filmpjes van gevecht scenes toevoegen.
+  - Soort opstart animatie toevoegen.
+  - LEGO Star Wars lightsaber toevoegen.
+  - Achtergrond zwart met wat fonkelende sterretjes
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+ Tijdens de feedback van een andere student, heb ik veel nieuwe en goeie ideeën gekregen. Zo moet ik goed gaan nadenken waar ik mijn infomratie neerzet. Dit wil ik graag interactief houden, dus de plek is belangrijk. Daarnaast moet ik een besluit nemen hoe ik de hele pagina wil gaan vullen. Naar beneden scrollen of links en rechts? 
+ 
+ Als volgt is het toevoegen van geluiden een *must have*. Lightsabers hebben een enorm uniek geluid, een die elk persoon wel kan herkennen. Deze wil ik dus enorm graag toepassen. Dit geldt ook voor quotes van karakters uit de film of series of andere speciale geluiden.
 
+ Ik zit ook al na te denken over een opstart animatie. Dus als je de website aanklikt en voor het eerst bekijkt, dat er een aantal afbeeldingen van lightsaber vecht scènes in beeld komen, dan langzaam het woord **Star Wars** en vervolgens verdwijnt het allemaal en verschijnen de lightabers. Door lightsabers te laten zien vooraf, weet de gebruiker sneller dat het over lightsabers gaat.
 
+ Een Easter Egg kan een LEGO lightsabers zijn die ik toevoeg. Deze wordt natuurlijk niet in de films of dergelijke gebruikt, maar is wel een iconisch LEGO onderdeel dat elke Star Wars fan wel herkent.
 
-  ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
-
-  #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
-
-
-  ### Bevinding 3:
-  ...
+ Als laatste punt is de achtergrond. Graag wil ik een achtergrond die past bij de lightsabers. Een goeie manier is het gebruik van sterretjes.
 
 </details>
 

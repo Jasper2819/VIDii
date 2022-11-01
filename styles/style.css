@@ -5,18 +5,20 @@
 /* naar een idee van Jen Simmons */
 *, *::after, *::before {
   box-sizing:border-box;  
+  margin:0;
+	padding:0;
 }
 
 body {
   margin:0;
+  background-color: rgb(82, 79, 79);
+  text-align: center; 
+  place-content: center;
 }
 
 button:not([disabled]) {
   cursor:pointer;
 }
-
-
-
 
 
 /*********************/
@@ -36,10 +38,111 @@ button:not([disabled]) {
 /********************/
 
 h1 {
-  color:var(--color-headings);
+  color:yellow;
+  display:grid;
+  justify-content: center;
+}
+
+p{
+  color: yellow;
+}
+
+ol {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 4em;
+  gap: 1em;
+  
+}
+
+ol > li {
+  border: 3px solid black;
+  padding: 10px;
+  min-height: 15em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  display:  flex;
+  margin-left: 3em;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+
+/* EERSTE LIGHTSABER CODE */
+
+ol li:first-of-type ul li:first-of-type {
+  background-color: rgb(129, 122, 122);
+  width: 15em;
+  height: 4em;
+  border-radius: .25em .5em .5em .25em;
 }
 
 
-/* ... */
+ol li:first-of-type ul li:nth-of-type(2) {
+  background-color: rgb(165, 165, 165);
+  width: 10em;
+  height: 3em;
+  border-radius: 0% 0% 50% 0% / 0% 0% 100% 0%; 
+}
+
+ol li:first-of-type ul li:first-of-type ul li {
+  background-color: black;
+  width: 7em;
+  height: 0.3em;
+  right: 5.5em;
+  bottom: 0.2em;
+  border-radius: 0em;
+  margin: auto;
+}
 
 
+
+
+
+ul li {
+    position: relative;
+}
+
+
+/* Lightsaber 2 */
+
+ol li:nth-of-type(2) ul {
+  background-color: red;
+  background-image: linear-gradient(
+    to left,
+    silver 0 10px,
+    hsl(39 75% 50%) 0 14px,
+    silver 0 15px,
+    black 0 20px,
+    silver 0 22px,
+    black 0 25px,
+    silver 0 27px,
+    black 0 30px,
+    silver 0 32px,
+    black 0 35px,
+    silver 0 37px,
+    black 0 40px,
+    silver 0 42px,
+    black 0 45px,
+    silver 0 47px,
+    black 0 50px,
+    silver 0 60px,
+    hsl(39 75% 50%) 60px 80px,
+    silver 0 100%
+  );
+
+  width: 20em;
+  height: 2em;
+  margin: auto;
+  
+}
