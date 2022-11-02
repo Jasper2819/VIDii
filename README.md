@@ -152,4 +152,7 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
 1. Afbeelding voor de favicon: https://www.freeimages.com/nl/psd/light-saber-handle-psd-5149199?ref=vectorhq (gratis afbeelding).
 
+2. Hulp met het vinden van allerlei states en tags 
+https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translateX
+
 </details>
