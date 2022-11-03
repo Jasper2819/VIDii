@@ -155,4 +155,10 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 2. Hulp met het vinden van allerlei states en tags 
 https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translateX
 
+3. Met behulp van een generator, kon ik lastige vormen eenvoudig in mijn code zetten. https://bennettfeely.com/clippy/.
+
+4. perfecte gradiënts maken voor verschillende divs, heb ik gedaan met de volgende website: https://www.colorzilla.com/gradient-editor/.
+
+5. Site waar de afbeeldingen van planeten afkomen: de planeet Endor https://www.pngegg.com/en/search?q=tatooine, voor Naboo heb ik https://www.swcombine.com/rules/?Races&ID=65 bezocht en de overige afbeeldingen qua planeten en omgevingen heb ik van https://www.starwars.com.
+
 </details>

@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'starwars';
+  src: url('../Fonts/starjedi-webfont.woff2') format('woff2'),
+       url('../Fonts/starjedi-webfont.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /*************/
 /* CSS RESET */
 /*************/
@@ -10,15 +18,9 @@
   
 }
 
-@keyframes startup {
-  0%  {background-image: url("readme-images/star-wars-remix-song.jpeg");}
-
-  100%  {background-image: none;}
-}
-
 body {
   margin:0;
-  background-color: rgb(82, 82, 82);
+  background-image: url('../images/starry-night-sky.jpg');
   text-align: center; 
   place-content: center;
   animation-name: startup;
@@ -26,10 +28,14 @@ body {
   animation-iteration-count: 1;
 }
 
+body.planeet1 {
+  background-image: url('../images/Bosachtergrond.jpg');
+  background-color: rgb(0, 82, 0);
+}
+
 button:not([disabled]) {
   cursor:pointer;
 }
-
 
 /*********************/
 /* CUSTOM PROPERTIES */
@@ -38,6 +44,12 @@ button:not([disabled]) {
 :root {
   --color-headings:yellow;
   --bluesaberblade: linear-gradient(to bottom, #2989d8 15%,#ffffff 52%,#2989d8 89%);
+  --redsaberblade: linear-gradient(to bottom, #c70505 15%,#ffffff 52%,#c70505 89%);
+  --Kleur-headings-2: White;
+  --Kleur-basis-tekst: white;
+  --starwars-font: 'starwars';
+  --darthmaulkleur: #98948b;
+  --dookukleur: #828582
 }
 
 
@@ -45,16 +57,102 @@ button:not([disabled]) {
 /* ALGEMENE STYLING */
 /********************/
 
+section {
+  display: flex;
+  justify-content: center;
+  border: 3px solid #000000;
+  
+}
+
+/* *************** BUTTONS *************** */
+
+section article ul button {
+  border: none;
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  margin: 3em;
+}
+
+/* BUTTON 1 Endor */
+section article ul button:first-of-type img {
+  border: none;
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+}
+
+section article ul button:first-of-type {
+  background: none;
+}
+
+/* BUTTON 2 Tatooine */
+section article ul button:nth-of-type(2) img {
+  border: none;
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+}
+
+section article ul button:nth-of-type(2) {
+  background: none;
+}
+
+/* BUTTON 3 Felucia */
+section article ul button:nth-of-type(3) img {
+  border: none;
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+}
+
+section article ul button:nth-of-type(3) {
+  background: none;
+}
+
+/* BUTTON 4 Naboo */
+section article ul button:last-of-type img {
+  border: none;
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+}
+
+section article ul button:last-of-type {
+  background: none;
+}
+
+
 h1 {
   color: var(--color-headings);
   display:grid;
   justify-content: center;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "starwars" , sans-serif;
+  letter-spacing: 0.1em;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
-p{
-  color: yellow;
-  font-family: "Source Sans Pro", sans-serif;
+h2 {
+  color: var(--color-headings);
+  display:grid;
+  justify-content: center;
+  font-family: "starwars" , sans-serif;
+  letter-spacing: 0.1em;
+}
+ol li:first-of-type h2 {
+  color: var(--color-headings);
+  display: grid;
+  justify-content: center;
+  font-family: "starwars" , sans-serif;
+  letter-spacing: 0.1em;
+}
+
+p {
+  color: var(--Kleur-basis-tekst);
+  font-family: "starwars", sans-serif;
+  letter-spacing: 0.1em;
 }
 
 ol {
@@ -86,16 +184,17 @@ ul {
   margin-left: 3em;
   align-items: center;
   position: relative;
-  justify-content: center;
+  
 }
 
-/* **** TWWEDE LIGHTSABER CODE: ANAKIN'S **** */
+/* *************** EERSTE LIGHTSABER CODE: ANAKIN'S *************** */
 
 ol li:first-of-type article {
   display:flex;
   flex-wrap: nowrap;
   align-items: center;
   position: absolute;
+  
   /* border: 3px solid black; */
 }
 
@@ -124,7 +223,7 @@ ol li:first-of-type article strong {
 }
 
 /* Handvat grip strepen */
-.stripes1 {
+ol li:first-of-type article div:first-of-type {
   position: relative;
   background-color: rgb(19, 18, 18);
   height: 0.75em;
@@ -133,7 +232,7 @@ ol li:first-of-type article strong {
   left: -5.5em;
 }
 
-.stripes2 {
+ol li:first-of-type article div:nth-of-type(2) {
   position: relative;
   background-color: rgb(19, 18, 18);
   height: 0.75em;
@@ -142,7 +241,7 @@ ol li:first-of-type article strong {
   left: -12.5em;
 }
 
-.stripes3 {
+ol li:first-of-type article div:nth-of-type(3) {
   position: relative;
   background-color: rgb(19, 18, 18);
   height: 0.75em;
@@ -151,7 +250,7 @@ ol li:first-of-type article strong {
   left: -19.5em;
 }
 
-.stripes4 {
+ol li:first-of-type article div:nth-of-type(4) {
   position: relative;
   background-color: rgb(19, 18, 18);
   height: 0.75em;
@@ -248,65 +347,451 @@ ol li:first-of-type article button {
 
 .blade {
   position: relative;
+  /* border: 2px solid black; */
   border-radius: 0em 1em 1em 0em;
   background: var(--bluesaberblade);
   height: 2em;
-  width: 20em;
-  left: 19.3em;
+  width: 40em;
+  left: 29.3em;
   bottom: -0.3em;
   display: none;
   z-index: -1;
+  transform-origin: left center;
 }
 
 .blade.open {
   display: block;
-  animation: blades .05s infinite, growblades 2s;
+  animation: blades .05s infinite, growblades .2s;
 }
 
 @keyframes blades {
   0%    {box-shadow: none;}
-  50%   {box-shadow: 10px 0px 10px 20px #2989d8;}
+  50%   {box-shadow: 12px 0px 10px 20px #2989d8;}
   100%  {box-shadow: none;}
 }
 
 @keyframes growblades {
-  0% {width: 0em;}
-  100% {width: 20em;}
+  0% {transform: scalex(0);}
+  100% {transform: scalex(1);}
 }
 
-/* TWEEDE LIGHTSABER CODE: DARTH MAUL */
+
+/* *************** TWEEDE LIGHTSABER CODE: DARTH MAUL*************** */
 
 ol li:nth-of-type(2) article {
   display:flex;
   flex-wrap: nowrap;
   align-items: center;
   position: absolute;
-  border: 2px solid black;
-  left:31em;                                  /*Door deze te veranderen, akn je de gehele lightsaber verplaatsen */
+  /* border: 2px solid black; */ 
+  left:13em;  /*Door deze te veranderen, akn je de gehele lightsaber verplaatsen */                                 
 }
 
 /* MAIN FRAME LIGHTSABER 2 */
 ol li:nth-of-type(2) article header {
   position: relative;
-  background-color: #8e95a4;
+  background-color: var(--darthmaulkleur);
+  /* box-shadow: inset 0px 0px 20px 2px rgb(172, 171, 171); */
   height: 3em;
   width: 35em;
   left: 0em;
 }
 
-/* rechter emitter kant */
+/* rechter gradient kant */
 ol li:nth-of-type(2) article strong:nth-of-type(1) {
   position: relative;
-  background-color: #8e95a4;
-  height: 5em;
-  width: 6em;
+  background: linear-gradient(
+    to left, 
+    #98948b 7%,#000000 13%,
+    #98948b 19%,#98948b 27%,#000000 31%,#98948b 35%,
+    #98948b 35%,#98948b 43%,#000000 49%,#000000 49%,
+    #98948b 55%,#98948b 63%,#000000 67%,#98948b 71%,
+    #98948b 79%,#000000 85%,#000000 85%,#98948b 91%);
+  height: 3.1em;
+  width: 4em;
+  right: 11em;
+  z-index: 1;
 }
 
-/* linker emitter kant */
+/* linker gradient kant */
 ol li:nth-of-type(2) article strong:nth-of-type(2) {
   position: relative;
-  background-color: #8e95a4;
-  height: 5em;
-  width: 6em;
-  left: -47em;
+  background: linear-gradient(
+    to left, 
+    #98948b 7%,#000000 13%,
+    #98948b 19%,#98948b 27%,#000000 31%,#98948b 35%,
+    #98948b 35%,#98948b 43%,#000000 49%,#000000 49%,
+    #98948b 55%,#98948b 63%,#000000 67%,#98948b 71%,
+    #98948b 79%,#000000 85%,#000000 85%,#98948b 91%);
+  height: 3.1em;
+  width: 4em;
+  right: 32em;
+  z-index: 1;
 }
+
+/* Middenstreep op lightsaber frame */
+ol li:nth-of-type(2) article div:nth-of-type(1) {
+  position: relative;
+  background: black;
+  height: 3em;
+  width: 0.25em;
+  left: -26em;
+  z-index: 2;
+}
+
+/* linker emitter blok */
+ol li:nth-of-type(2) article div:nth-of-type(2) {
+  position: relative;
+  background: var(--darthmaulkleur);
+  height: 4em;
+  width: 0.25em;
+  left: -45em;
+}
+
+/* rechter emitter blok */
+ol li:nth-of-type(2) article div:nth-of-type(3) {
+  position: relative;
+  background: var(--darthmaulkleur);
+  height: 4em;
+  width: 0.25em;
+  left: -7em;
+}
+
+/* Linker emitter verdikkingsblok */
+ol li:nth-of-type(2) article div:nth-of-type(4) {
+  position: relative;
+  background: var(--darthmaulkleur);
+  height: 3em;
+  width: 0.8em;
+  left: -46.3em;
+}
+
+/* Rechter emitter verdikkingsblok */
+ol li:nth-of-type(2) article div:nth-of-type(5) {
+  position: relative;
+  background: var(--darthmaulkleur);
+  height: 3em;
+  width: 0.8em;
+  left: -7.8em;
+}
+
+/* Shading onderdeel */
+ol li:nth-of-type(2) article div:nth-of-type(6) {
+  position: relative;
+  background: rgb(179, 175, 175);
+  height: 0.25em;
+  width: 34.9em;
+  left: -45.3em;
+  bottom: 1em;
+  z-index: 0;
+}
+
+/* Linker gebogen vorm, boven */
+ol li:nth-of-type(2) article div:nth-of-type(7) {
+  position: relative;
+  background: var(--darthmaulkleur);
+  height: 2em;
+  width: 3em;
+  left: -82em;
+  bottom: 2.5em;
+  z-index: 0;
+  clip-path: polygon(52% 87%, 66% 83%, 80% 76%, 
+  91% 78%, 99% 86%, 100% 100%, 0 100%, 4% 93%, 14% 88%, 32% 86%);
+}
+
+/* linker gebogen vorm, onder */
+ol li:nth-of-type(2) article div:nth-of-type(8) {
+  position: relative;
+  background: var(--darthmaulkleur);
+  height: 1em;
+  width: 3em;
+  left: -85em;
+  bottom: -2.5em;
+  z-index: 0;
+  clip-path: polygon(52% 87%, 66% 83%, 80% 76%, 
+  91% 78%, 99% 86%, 100% 100%, 0 100%, 4% 93%, 14% 88%, 32% 86%);
+  transform: scale(1, -2)
+}
+
+/* linker streep bij emitter, 2e van boven */
+ol li:nth-of-type(2) article div:nth-of-type(9) {
+  position: relative;
+  background: var(--darthmaulkleur);
+  height: 0.25em;
+  width: 3em;
+  left: -88em;
+  bottom: 0.6em;
+}
+
+/* linker streep bij emitter, 3e van boven */
+ol li:nth-of-type(2) article div:nth-of-type(10) {
+  position: relative;
+  background: var(--darthmaulkleur);
+  height: 0.25em;
+  width: 3em;
+  left: -91em;
+  bottom: -0.7em;
+}
+
+/* rechter gebogen vorm, onder */
+ol li:nth-of-type(2) article div:nth-of-type(11) {
+  position: relative;
+  background: var(--darthmaulkleur);
+  height: 2em;
+  width: 3em;
+  left: -58.5em;
+  bottom: -2.5em;
+  z-index: 0;
+  transform: rotate(180deg);
+  clip-path: polygon(52% 87%, 66% 83%, 80% 76%, 
+  91% 78%, 99% 86%, 100% 100%, 0 100%, 4% 93%, 14% 88%, 32% 86%);
+}
+
+/* rechter gebogen vorm, boven */
+ol li:nth-of-type(2) article div:nth-of-type(12) {
+  position: relative;
+  background: var(--darthmaulkleur);
+  height: 2em;
+  width: 3em;
+  left: -61.5em;
+  bottom: 2.5em;
+  z-index: 0;
+  clip-path: polygon(52% 87%, 66% 83%, 80% 76%, 
+  91% 78%, 99% 86%, 100% 100%, 0 100%, 4% 93%, 14% 88%, 32% 86%);
+  transform: scale(-1, 1);
+}
+
+/* rechter streep 2e van boven */
+ol li:nth-of-type(2) article div:nth-of-type(13) {
+  position: relative;
+  background: var(--darthmaulkleur);
+  height: 0.25em;
+  width: 3em;
+  left: -64em;
+  bottom: 0.6em;
+}
+
+/* rechter streep 3e van boven */
+ol li:nth-of-type(2) article div:nth-of-type(14) {
+  position: relative;
+  background: var(--darthmaulkleur);
+  height: 0.25em;
+  width: 3em;
+  left: -67em;
+  bottom: -0.7em;
+}
+
+/* Button links van het midden */
+ol li:nth-of-type(2) article button:first-of-type {
+  position: relative;
+  background: rgb(146, 2, 2);
+  height: 1em;
+  width: 1em;
+  z-index: 1;
+  left: -107em;
+  border: 1px solid black;
+  border-radius: 1em;
+}
+
+/* Button rechts van het midden */
+ol li:nth-of-type(2) article button:nth-of-type(2) {
+  position: relative;
+  background: rgb(146, 2, 2);
+  height: 1em;
+  width: 1em;
+  z-index: 1;
+  left: -104em;
+  border: 1px solid black;
+  border-radius: 1em;
+}
+
+/* RECHTER blade van de saber */
+ol li:nth-of-type(2) article div:nth-of-type(15) {
+  position: relative;
+  /* border: 2px solid black; */
+  border-radius: 0em 1em 1em 0em;
+  background: var(--redsaberblade);
+  height: 1.5em;
+  width: 40em;
+  left: -71.5em;
+  bottom: 0em;
+  display: none;
+  z-index: -1;
+  transform-origin: left center;
+}
+
+ol li:nth-of-type(2) article div.open2 {
+  display: block;
+  animation: blades2 .05s infinite, growblades .2s;
+}
+
+@keyframes blades2 {
+  0%    {box-shadow: none;}
+  50%   {box-shadow: 12px 0px 10px 20px #e20a0a;}
+  100%  {box-shadow: none;}
+}
+
+@keyframes growblades {
+  0% {transform: scalex(0);}
+  100% {transform: scalex(1);}
+}
+
+/* LINKER blade van de saber */
+ol li:nth-of-type(2) article div:nth-of-type(16) {
+  position: relative;
+  /* border: 2px solid black; */
+  border-radius: 0em 1em 1em 0em;
+  background: var(--redsaberblade);
+  height: 1.5em;
+  width: 40em;
+  left: -105em;
+  bottom: 0em;
+  display: none;
+  z-index: -1;
+  transform-origin: left center;
+  transform: rotate(180deg);
+}
+
+ol li:nth-of-type(2) article div.open22 {
+  display: block;
+  animation: blades2 .05s infinite, growblades2 .2s;
+}
+
+@keyframes blades2 {
+  0%    {box-shadow: none;}
+  50%   {box-shadow: 12px 0px 10px 20px #e20a0a;}
+  100%  {box-shadow: none;}
+}
+
+@keyframes growblades2 {
+  0% {transform: scalex(0);}
+  100% {transform: scalex(-1);}
+}
+
+/* *************** DERDE LIGHTSABER: DOOKU ****************/
+
+/* ol li:nth-of-type(3) {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+} */
+
+ol li:nth-of-type(3) article {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  /* border: 3px solid black; */
+  flex-direction: row;
+  /* transform: scale(1.5); */ /*Hiermee de gehele lightsaber groter maken */
+}
+
+/* MAIN FRAME DOOKU LIGHTSABER */
+ol li:nth-of-type(3) article header {
+  background: var(--dookukleur);
+  height: 3em;
+  width: 10em;
+}
+
+/* Schuine kant van de lightsaber rechts */
+ol li:nth-of-type(3) article strong:first-of-type {
+  background: var(--dookukleur);
+  height: 3.87em;
+  width: 2.5em;
+  clip-path: polygon(0% 0%, 11% 0%, 24% 1%, 37% 3%, 48% 6%, 61% 10%, 
+  77% 16%, 88% 22%, 100% 28%, 74% 60%, 69% 56%, 64% 54%, 55% 49%, 
+  45% 45%, 35% 42%, 25% 40%, 14% 39%, 0 39%);
+  transform: scale(2, 2);
+  bottom: -2.35em;
+  left: 1.2em;
+  position: relative;
+}
+
+/* Schuine kant van de lightsaber links */
+ol li:nth-of-type(3) article strong:nth-of-type(2) {
+  position: relative;
+  background: var(--dookukleur);
+  height: 9.4em;
+  width: 8em;
+  bottom: -3.2em;
+  left: -20.4em;
+  clip-path: polygon(100% 0%, 57% 0, 49% 1%, 43% 4%,
+  36% 8%, 31% 13%, 19% 25%, 49% 44%, 56% 37%, 62% 33%, 
+  68% 32%, 78% 32%, 88% 32%, 100% 32%);
+}
+
+/* Klein zwart stukje aan de linkerkant */
+ol li:nth-of-type(3) article div:first-of-type {
+  position: relative;
+  background-color: #2a2a2a;
+  height: 3em;
+  width: 3.1em;
+  left: -27.4em;
+  bottom: -2em;
+  transform: rotate(41deg);
+}
+
+/* bovenste handvat gedeelte */
+ol li:nth-of-type(3) article div:nth-of-type(2) {
+  position: relative;
+  background-color: #191818;
+  height: 3em;
+  width: 3em;
+  left: -16em;
+  bottom: -1.5em;
+  clip-path: polygon(1% 30%, 3% 31%, 12% 33%, 20% 35%, 28% 37%, 32% 38%, 
+  39% 40%, 44% 42%, 48% 40%, 49% 38%, 49% 36%, 49% 34%, 49% 32%, 48% 30%, 29% 30%, 10% 30%);
+  transform: scale(6, 5);
+}
+
+/* onderste handvat gedeelte */
+ol li:nth-of-type(3) article div:nth-of-type(3) {
+  position: relative;
+  background-color: #191818;
+  height: 3em;
+  width: 3em;
+  left: -30em;
+  bottom: 1.5em;
+  clip-path: polygon(1% 30%, 3% 31%, 12% 33%, 20% 35%, 28% 37%, 32% 38%, 
+  39% 40%, 44% 42%, 48% 40%, 49% 38%, 49% 36%, 49% 34%, 49% 32%, 48% 30%, 29% 30%, 10% 30%);
+  transform: scale(-6, -5);
+}
+
+/* elips links */
+ol li:nth-of-type(3) article div:nth-of-type(4) {
+  position: relative;
+  background:rgb(42, 41, 41);
+  /* box-shadow: inset 0px 0px 10px 10px rgb(101, 100, 100); */
+  border-radius: 1em;
+  height: 3.5em;
+  width: 0.25em;
+  left: -20em;
+  bottom: 0em;
+}
+
+/* elips rechts */
+ol li:nth-of-type(3) article div:nth-of-type(5) {
+  position: relative;
+  background:rgb(42, 41, 41);
+  border-radius: 1em;
+  height: 3.5em;
+  width: 0.25em;
+  left: -32.5em;
+  bottom: 0em;
+}
+
+/* schuine lijn bij handvatten */
+ol li:nth-of-type(3) article div:nth-of-type(6) {
+  position: relative;
+  background: rgb(42, 41, 41);
+  border-radius: 1em;
+  /* clip-path: polygon(0 0, 5% 0, 100% 100%, 95% 100%); */
+  height: 12.5em;
+  width: 0.15em;
+  left: -26.5em;
+  bottom: 0em;
+  transform: rotate(-76.5deg);
+}
+
+
+
