@@ -75,6 +75,11 @@ section article ul button {
   margin: 3em;
 }
 
+section article ul button:hover {
+  box-shadow: 0 0 2em 2em white;
+  /* clip-path: circle(50% at 50% 50%); */
+}
+
 /* BUTTON 1 Endor */
 section article ul button:first-of-type img {
   border: none;
