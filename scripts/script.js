@@ -23,6 +23,22 @@ buttonSaber22.addEventListener("click", function() {
     saber22.classList.toggle("open22");
 })
 
+// Endor laten verschijnen
+var body = document.querySelector("body");
+var knopplaneet1 = document.querySelector("section article ul button:nth-of-type(1)");
+
 knopplaneet1.addEventListener("click", function() {
-    body.classList.toggle("planeet1")
+    body.classList.toggle("Endor");
 })
+
+
+// Tatooine laten verschijnen
+var buttonplaneet2 = document.querySelector("section article ul button:nth-of-type(2)");
+buttonplaneet2.addEventListener("click", veranderwoestijn);
+
+function veranderwoestijn () {
+    var woestijn = document.querySelector("body");
+
+    woestijn.classList.toggle("Tatooine");
+}
+
