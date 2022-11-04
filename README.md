@@ -46,19 +46,43 @@ blauw
   - Achtergrond zwart met wat fonkelende sterretjes
 
   ### oplossingen:
- Tijdens de feedback van een andere student, heb ik veel nieuwe en goeie ideeën gekregen. Zo moet ik goed gaan nadenken waar ik mijn infomratie neerzet. Dit wil ik graag interactief houden, dus de plek is belangrijk. Daarnaast moet ik een besluit nemen hoe ik de hele pagina wil gaan vullen. Naar beneden scrollen of links en rechts?
+ Tijdens de feedback van een andere student, heb ik veel nieuwe en goeie ideeën gekregen. Zo moet ik goed gaan nadenken waar ik mijn informatie neerzet. Dit wil ik graag interactief houden, dus de plek is belangrijk. Daarnaast moet ik een besluit nemen hoe ik de hele pagina wil gaan vullen. Naar beneden scrollen of links en rechts? Er moet ook duidelijke feedback komen voor de gebruiker als hij/zij op een bepaalde knop drukt. Dit kan visueel gebeuren door een zichtbare verandering of op een andere manier.
 
- Als volgt is het toevoegen van geluiden een *must have*. Lightsabers hebben een enorm uniek geluid, een die elk persoon wel kan herkennen. Deze wil ik dus enorm graag toepassen. Dit geldt ook voor quotes van karakters uit de film of series of andere speciale geluiden.
+ Als volgt is het toevoegen van geluiden een *must have*. Lightsabers hebben een enorm uniek geluid, een die elk persoon wel kan herkennen. Deze wil ik dus enorm graag toepassen. Dit geldt ook voor quotes van karakters uit de film of series of andere speciale geluiden. Ik ga dus de aankomende week meer focus leggen op het begrijpen van Java codes. Ik heb het gevoel dat hier de sleutel ligt tot het maken van vele animaties.
 
- Ik zit ook al na te denken over een opstart animatie. Dus als je de website aanklikt en voor het eerst bekijkt, dat er een aantal afbeeldingen van lightsaber vecht scènes in beeld komen, dan langzaam het woord **Star Wars** en vervolgens verdwijnt het allemaal en verschijnen de lightabers. Door lightsabers te laten zien vooraf, weet de gebruiker sneller dat het over lightsabers gaat.
+ Ik zit ook al na te denken over een opstart animatie. Dus als je de website aanklikt en voor het eerst bekijkt, dat er een aantal afbeeldingen van lightsaber vecht scènes in beeld komen, dan langzaam het woord **Star Wars** en vervolgens verdwijnt het allemaal en verschijnen de lightabers. Door lightsabers te laten zien vooraf, weet de gebruiker sneller dat het over lightsabers gaat. Ik heb nog geen idee hoe ik dit moet gaan aanpakken, maar zoals ik al zei moet dit met CSS en Java wel lukken.
 
- Een Easter Egg kan een LEGO lightsabers zijn die ik toevoeg. Deze wordt natuurlijk niet in de films of dergelijke gebruikt, maar is wel een iconisch LEGO onderdeel dat elke Star Wars fan wel herkent.
+ Een Easter Egg kan een LEGO lightsabers zijn die ik toevoeg. Deze wordt natuurlijk niet in de films of dergelijke gebruikt, maar is wel een iconisch LEGO onderdeel dat elke Star Wars fan wel herkent. Verdere easter eggs zullen te maken hebben met geluiden of beelden uit de films en series van Star Wars.
 
- Als laatste punt is de achtergrond. Graag wil ik een achtergrond die past bij de lightsabers. Een goeie manier is het gebruik van sterretjes.
+ Als laatste punt is de achtergrond. Graag wil ik een achtergrond die past bij de lightsabers. Een goeie manier is het gebruik van sterretjes. Een animatie toevoegen aan de achtergrond maakt de webiste nog interessanter!
 
 </details>
 
+## Week reflectie
+<details>
+  <summary> Reflectie op de eerste week (31 oktober tot 4 november)</summary>
 
+  ### Inleiding
+  Afgelopen week heb ik mij enorm ingezet om alles te weten te komen over HTML, CSS en Java Script. Ik begon moeizaam en wist niet waar ik moest beginnen. Gelukkig waren er studenten die mij wisten te vertellen hoe ik het beste kon starten met een website en al gauw had ik mijn eerste regels code geschreven. Grappig hoe je emoties tijdens het coderen kunnen veranderen. Het ene moment ben je trots dat iets lukt, en nog geen 10 minuten later zit je gefrustreerd door een foutmelding achter je scherm te zoeken naar de typefout die je hebt gemaakt.
+  
+  Ik vind coderen best leuk. Je ziet meteen resultaat en dat is zeker handig voor iemand die geen geduld heeft! Ik leer enorm snel hoe HTML en CSS in elkaar zitten. We krijgen voldoende uitleg en oefeningen. Hierdoor kan ik mijn kennis blijven vergroten.
+
+  Ik heb vertrouwen in mijn website. Ik heb tot nu toe een goeie basis, iets waar ik al trots op ben. Ik ga de aankomende week veel veranderingen doorvoeren en verbeteringen toepassen. Ik zal om feedback blijven vragen om zo tot een top resultaat te komen!
+
+  ### Pluspunten van de week
+
+  - Ik vraag voldoende hulp aan medestudenten, de studenassistent en docent.
+  - Mijn website heeft een goeie basis om aan door te werken.
+  - Er is een fijne sfeer in de klas, dat zorgt dat je niet beschaamd hoeft te zijn om vragen te stellen.
+  - Zelfs ik wordt wel eens gevraagd of ik met iemand kan meekijken.
+
+  ### Verbeterpunten van de week
+
+- Inhoudelijk moet mijn site meer *responsive* worden.
+- De animaties voor de lightsaber blades moeten gemaakt en gelinked worden.
+- Ik moet meer het beoordelingsformulier bijhouden om te zorgen dat ik geen punten mis.
+
+</details>
 
 
 ## Voortgang/Feedback 2
