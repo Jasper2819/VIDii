@@ -27,6 +27,7 @@ body {
   place-content: center;
   animation: stars 30s linear infinite;
   cursor: url('../Cursors/icons8-star-wars-naboo-ship-48.png') 25 15, auto;
+  /* animation: 8s ease-out 0s 1 whoom; */
 }
 
 @keyframes stars {
@@ -84,6 +85,7 @@ section article ul button {
 
 section {
   display: flex;
+  /* flex-flow: row nowrap; */
   justify-content: center;
   /* border: 3px solid #000000; */
   
@@ -97,12 +99,18 @@ section {
   100%  {transform: rotate(360deg);}
 }
 
+section article ul {
+  display:flex;
+  flex-flow: row wrap;
+}
+
 section article ul button {
   border: none;
   background-size: cover;
   width: 150px;
   height: 150px;
   margin: 3em;
+
 }
 
 section article ul button:hover {
@@ -160,6 +168,19 @@ section article ul button:last-of-type {
   background: none;
 }
 
+@keyframes whoom {
+  0% {transform: scale(10);}
+  100% {transform: scale(1);}
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 
 h1 {
   color: var(--color-headings);
@@ -167,9 +188,13 @@ h1 {
   justify-content: center;
   font-family: "starwars" , sans-serif;
   letter-spacing: 0.1em;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+  position: fixed;
+  top: 1em;
+  width: 100%;
+  text-align: center;
+  /* margin: 0 auto; */
+  z-index: 1;
+  /* animation: 5s ease-out 0s 1 whoom; */
 }
 
 h2 {
@@ -866,7 +891,7 @@ ol li:nth-of-type(4) button:first-of-type {
 }
 
 ol li:nth-of-type(4) button:nth-of-type(2) {
-  position: relative;
+  position: relative;   
   background: rgb(168, 0, 0);
   height: 2em;
   width: 2em;
