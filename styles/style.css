@@ -14,8 +14,7 @@
 *, *::after, *::before {
   box-sizing:border-box;  
   margin:0;
-	padding:0;
-  
+	padding:0; 
 }
 
 body {
@@ -27,7 +26,10 @@ body {
   place-content: center;
   animation: stars 30s linear infinite;
   cursor: url('../Cursors/icons8-star-wars-naboo-ship-48.png') 25 15, auto;
-  /* animation: 8s ease-out 0s 1 whoom; */
+}
+
+section:first-of-type img {
+  filter: invert(100%);
 }
 
 @keyframes stars {
@@ -63,6 +65,23 @@ section article ul button {
   cursor: url('../Cursors/icons8-star-wars-naboo-ship-48.png'), auto;
 }
 
+/*************************************************/
+/* KEYFRAMES EN ANIMATIES VOOR OPSTARTEN WEBSITE */
+
+@keyframes letterscroll {
+  0% {transform: scale(10);}
+  100% {transform: scale(1);}
+}
+/* animation: 4s ease-in 1s 1 normal forwards whoom; */
+@keyframes whoom {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+/* animation: 8s ease-out 0s 1 whoom; toevoegen bij juiste element */
+
+
+
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
@@ -91,9 +110,12 @@ section {
   
 }
 
+section:first-of-type {
+  display:grid;
+}
 /* *************** BUTTONS *************** */
 
-@keyframes draaien {
+@keyframes draaiend {
   0%  {transform: rotate(0deg);}
 
   100%  {transform: rotate(360deg);}
@@ -110,7 +132,6 @@ section article ul button {
   width: 150px;
   height: 150px;
   margin: 3em;
-
 }
 
 section article ul button:hover {
@@ -118,6 +139,12 @@ section article ul button:hover {
   background: none;
   border-radius: 60em;
   /* clip-path: circle(50% at 50% 50%); */
+}
+
+section article ul button:first-of-type img:hover {
+  animation-name: draaiend;
+  animation-duration: 1;
+  animation-iteration-count: 1;
 }
 
 /* BUTTON 1 Endor */
@@ -168,10 +195,10 @@ section article ul button:last-of-type {
   background: none;
 }
 
-@keyframes whoom {
+/* @keyframes whoom {
   0% {transform: scale(10);}
   100% {transform: scale(1);}
-}
+} */
 
 @keyframes slideInFromLeft {
   0% {
@@ -188,12 +215,12 @@ h1 {
   justify-content: center;
   font-family: "starwars" , sans-serif;
   letter-spacing: 0.1em;
-  position: fixed;
+  /* position: fixed; */
   top: 1em;
-  width: 100%;
+  /* width: 100%; */
   text-align: center;
   /* margin: 0 auto; */
-  z-index: 1;
+  /* z-index: 1; */
   /* animation: 5s ease-out 0s 1 whoom; */
 }
 
