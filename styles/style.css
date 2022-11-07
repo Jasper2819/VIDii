@@ -140,10 +140,12 @@ nav ul.open li img {
 
 header ul li:nth-of-type(2) button {
   background: white;
+
   font-family: aurebesh;
+
   left: 2em;
-  margin-top: 5em;
   padding: 1em;
+  margin-top: 5em;
   border: 3px solid red;
 }
 
@@ -169,22 +171,20 @@ header ul li:nth-of-type(2) button {
 /********************/
 
 section {
-  display: flex;
-  /* flex-flow: row nowrap; */
-  justify-content: center;
-  /* border: 3px solid #000000; */
-  
+  display: flex;  
+  justify-content: center;  
 }
 
 section:first-of-type {
   display:grid;
 }
 
-/* *************** BUTTONS *************** */
+/*************/
+/*  BUTTONS  */
+/*************/
 
 @keyframes draaiend {
   0%  {transform: rotate(0deg);}
-
   100%  {transform: rotate(360deg);}
 }
 
@@ -195,17 +195,16 @@ section article ul {
 
 section article ul button {
   border: none;
-  background-size: cover;
   width: 150px;
   height: 150px;
   margin: 3em;
+  background-size: cover;
 }
 
 section article ul button:hover {
-  box-shadow: 0 0 2em 2em white;
   background: none;
   border-radius: 60em;
-  /* clip-path: circle(50% at 50% 50%); */
+  box-shadow: 0 0 2em 2em white;
 }
 
 section article ul button:first-of-type img:hover {
@@ -262,53 +261,60 @@ section article ul button:last-of-type {
   background: none;
 }
 
-/* @keyframes whoom {
-  0% {transform: scale(10);}
-  100% {transform: scale(1);}
-} */
+/**********************************************************/
+/* Algemene instelling teksten teksten, sections en lists */
+/**********************************************************/
 
 h1 {
   color: var(--color-headings);
+
+  top: 1em;  
   display:grid;
+  text-align: center;
   justify-content: center;
+
   font-family: "starwars" , sans-serif;
   letter-spacing: 0.1em;
-  /* position: fixed; */
-  top: 1em;
-  /* width: 100%; */
-  text-align: center;
 }
 
 h2 {
   color: var(--color-headings);
+
   display:grid;
-  justify-content: center;
-  font-family: "starwars" , sans-serif;
-  letter-spacing: 0.1em;
   padding-top: 2em;
+  justify-content: center;
+
+  letter-spacing: 0.1em;
+  font-family: "starwars" , sans-serif;
 }
 
 h3 {
   color: var(--color-headings);
+
   display:grid;
+  padding-top: 2em;
   justify-content: center;
+  
+
   font-family: "starwars" , sans-serif;
   letter-spacing: 0.1em;
-  padding-top: 2em;
 }
 
 ol li:first-of-type h2 {
   color: var(--color-headings);
+
   display: grid;
   justify-content: center;
+
   font-family: "starwars" , sans-serif;
   letter-spacing: 0.1em;
 }
 
 p {
   color: var(--Kleur-basis-tekst);
-  font-family: "starwars", sans-serif;
+
   letter-spacing: 0.1em;
+  font-family: "starwars", sans-serif;
   white-space: pre;
 }
 
@@ -317,28 +323,24 @@ section article ul:nth-of-type(2) p {
   padding-left: 4em;
 }
 
-main section:first-of-type p {
-  line-break: auto;
-}
-
 ol {
   list-style: none;
+
+  gap: 3em;
+  height: 100%;
+  padding: 2em;  
   display: flex;
   flex-direction: column;
-  height: 100%;
-  padding: 2em;
-  gap: 3em;
-  
 }
 
 ol > li {
   /* border: 0.5em solid black;    Bepaal of er een border om de lists komt */
   padding: 10px;
   min-height: 15em;
-  display: flex;
+  display: flex;  
+  align-items: center;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 li {
@@ -352,8 +354,8 @@ ul {
 }
 
 section article ul:nth-of-type(2) {
+  align-items: center;
   justify-content: center;
- align-items: center;
 }
 
 /*****************************/
@@ -363,9 +365,8 @@ section article ul:nth-of-type(2) {
 ol li:first-of-type article {
   display:flex;
   flex-wrap: nowrap;
-  align-items: center;
   position: absolute;
-  /* border: 3px solid black; */
+  align-items: center;
 }
 
 /* Main frame van de lightsaber*/
