@@ -188,4 +188,6 @@ Voor de achtergrond sterren ben ik naar https://transparenttextures.com/patterns
 
 De cursor afbeelding komt van https://icons8.com/icons/set/star-wars.
 
+Audio voor de lightsabers komt van https://www.soundboard.com/sb/sound/930991.
+
 </details>

@@ -28,10 +28,6 @@ body {
   cursor: url('../Cursors/icons8-star-wars-naboo-ship-48.png') 25 15, auto;
 }
 
-section:first-of-type img {
-  filter: invert(100%);
-}
-
 @keyframes stars {
   0% {background-position: 0 0;}
 
@@ -49,14 +45,29 @@ section:first-of-type img {
 
 body.Endor {
   background-image: url('../images/Bosachtergrond.jpg');
-  background-color: rgb(0, 82, 0);
   animation: none;
+  background-size: 100vw 50vh;
+  /* object-fit: cover; */
+  background-repeat: no-repeat;
 }
 
 body.Tatooine {
   background-image: url('../images/tatooine2.jpg');
   animation: none;
+  background-size: 100vw 50vh;
+  /* object-fit: cover; */
+  background-repeat: no-repeat;
 }
+
+body.Felucia {
+  background-image: url(../images/BattleOfFelucia-Night.jpg);
+  /* background-size: 100vw 33em; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgb(24, 24, 24);
+  animation: none;
+}
+
 button:not([disabled]) {
   /* cursor: crosshair; */
 }
@@ -80,8 +91,52 @@ section article ul button {
 
 /* animation: 8s ease-out 0s 1 whoom; toevoegen bij juiste element */
 
+/******************/
+/* HAMBURGER MENU */
+/******************/
 
+header button:first-of-type {
+  display: flex;
+  align-self: flex-start;
+  flex-direction: column;
+  background: none;
+  position: fixed;
+  border: none;
+}
 
+header button:first-of-type img {
+  transform: rotate(45deg);
+  margin-bottom: -2.5em;
+  margin-left: 1em;
+}
+
+nav ul {
+  position: fixed;
+  background-color: var(--dookukleur);
+  border: none;
+  margin: 0;
+  padding: 2em 4em 10em 1em;
+  display: flex;
+  flex-direction: column;
+
+  visibility: hidden;
+}
+nav ul.open {
+  visibility: visible;
+}
+
+header ul li:nth-of-type(2) button {
+  background: white;
+  left: 1em;
+  margin-top: 5em;
+  padding: 1em;
+  border: 0.5em solid black;
+  
+}
+
+header button:nth-of-type(2) {
+
+}
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
@@ -113,6 +168,7 @@ section {
 section:first-of-type {
   display:grid;
 }
+
 /* *************** BUTTONS *************** */
 
 @keyframes draaiend {
@@ -181,6 +237,7 @@ section article ul button:nth-of-type(3) img {
 
 section article ul button:nth-of-type(3) {
   background: none;
+  
 }
 
 /* BUTTON 4 Naboo */
@@ -200,15 +257,6 @@ section article ul button:last-of-type {
   100% {transform: scale(1);}
 } */
 
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
 h1 {
   color: var(--color-headings);
   display:grid;
@@ -219,9 +267,6 @@ h1 {
   top: 1em;
   /* width: 100%; */
   text-align: center;
-  /* margin: 0 auto; */
-  /* z-index: 1; */
-  /* animation: 5s ease-out 0s 1 whoom; */
 }
 
 h2 {
@@ -232,6 +277,7 @@ h2 {
   letter-spacing: 0.1em;
   padding-top: 2em;
 }
+
 ol li:first-of-type h2 {
   color: var(--color-headings);
   display: grid;
@@ -291,7 +337,9 @@ section article ul:nth-of-type(2) {
  align-items: center;
 }
 
-/* *************** EERSTE LIGHTSABER CODE: ANAKIN'S *************** */
+/*****************************/
+/* EERSTE LIGHTSABER: ANAKIN */
+/*****************************/
 
 ol li:first-of-type article {
   display:flex;
@@ -453,7 +501,7 @@ ol li:first-of-type article button {
   /* border: 2px solid black; */
   border-radius: 0em 1em 1em 0em;
   background: var(--bluesaberblade);
-  height: 2em;
+  height: 1.5em;
   width: 40em;
   left: 29.3em;
   bottom: -0.3em;
@@ -464,10 +512,10 @@ ol li:first-of-type article button {
 
 .blade.open {
   display: block;
-  animation: blades .05s infinite, growblades .2s;
+  animation: bladeslightside .05s infinite, growblades .2s;
 }
 
-@keyframes blades {
+@keyframes bladeslightside {
   0%    {box-shadow: none;}
   50%   {box-shadow: 12px 0px 10px 20px #2989d8;}
   100%  {box-shadow: none;}
@@ -479,7 +527,9 @@ ol li:first-of-type article button {
 }
 
 
-/* *************** TWEEDE LIGHTSABER CODE: DARTH MAUL*************** */
+/*********************************/
+/* TWEEDE LIGHTSABER: DARTH MAUL */
+/*********************************/
 ol li:nth-of-type(2){
   /* display:flex; */
   /* align-items: flex-start; */
@@ -716,83 +766,53 @@ ol li:nth-of-type(2) article button:nth-of-type(2) {
   border-radius: 1em;
 }
 
-/* RECHTER blade van de saber */
-/* ol li:nth-of-type(2) article div:nth-of-type(15) {
-  position: relative;
-  
-  border-radius: 0em 1em 1em 0em;
-  background: var(--redsaberblade);
-  height: 1.5em;
-  width: 40em;
-  left: -71.5em;
-  bottom: 0em;
-  display: none;
-  z-index: -1;
-  transform-origin: left center;
-}
-
-ol li:nth-of-type(2) article div.open2 {
-  display: block;
-  animation: blades2-1 .05s infinite, growblades .2s;
-}
-
-@keyframes blades2-1 {
-  0%    {box-shadow: none;}
-  50%   {box-shadow: 12px 0px 10px 20px #e20a0a;}
-  100%  {box-shadow: none;}
-}
-
-@keyframes growblades {
-  0% {transform: scalex(0);}
-  100% {transform: scalex(1);}
-} */
-
-/* LINKER blade van de saber */
-/* ol li:nth-of-type(2) article div:nth-of-type(16) {
-  position: relative;
-  
-  border-radius: 0em 1em 1em 0em;
-  background: var(--redsaberblade);
-  height: 1.5em;
-  width: 40em;
-  left: -105em;
-  bottom: 0em;
-  display: none;
-  z-index: -1;
-  transform-origin: left center;
-  transform: rotate(180deg);
-}
-
-ol li:nth-of-type(2) article div.open22 {
-  display: block;
-  animation: blades2-2 .05s infinite, growblades2 .2s;
-}
-
-@keyframes blades2-2 {
-  0%    {box-shadow: none;}
-  50%   {box-shadow: 12px 0px 10px 20px #e20a0a;}
-  100%  {box-shadow: none;}
-}
-
-@keyframes growblades2 {
-  0% {transform: scalex(0);}
-  100% {transform: scalex(-1);}
-} */
-
-/* *************** DERDE LIGHTSABER: DOOKU ****************/
-
-/* ol li:nth-of-type(3) {
+ol li:nth-of-type(2) article:nth-of-type(2){
   display: flex;
-  flex-wrap: nowrap;
   align-items: center;
-  justify-content: center;
-} */
+}
+
+/* rechter saber blade van darth maul */
+ol li:nth-of-type(2) article:nth-of-type(2) div:nth-of-type(1) {
+  position:relative;
+  background: var(--redsaberblade);
+  height: 1.5em;
+  width: 35em;
+  border-color: white;
+  left: 51em;
+  z-index: -1;
+  border-radius: 1em;
+  visibility: hidden;
+  transform-origin: center left;
+}
+
+/* linker saber blade van darth maul */
+ol li:nth-of-type(2) article:nth-of-type(2) div:nth-of-type(2) {
+  position: relative;
+  background: var(--redsaberblade);
+  height: 1.5em;
+  width: 35em;
+  border-color: white;
+  left: -51em;
+  z-index: -1;
+  border-radius: 1em;
+  visibility: hidden;
+  transform-origin: center right;
+}
+
+ol li:nth-of-type(2) article:nth-of-type(2) div:nth-of-type(1).emittingdarthL {
+  visibility: visible;
+  animation: bladesdarkside .05s infinite, growblades .2s;
+}
+
+ol li:nth-of-type(2) article:nth-of-type(2) div:nth-of-type(2).emittingdarthR {
+  visibility: visible;
+  animation: bladesdarkside .05s infinite, growblades .2s;
+}
 
 ol li:nth-of-type(3) article {
   display: flex;
   position: relative;
   /* border: 3px solid black; */
-  /* flex-direction: row; */
   /* transform: scale(1.5); */ /*Hiermee de gehele lightsaber groter maken */
   align-items: center;
   left: 12em;
@@ -906,6 +926,11 @@ ol li:nth-of-type(3) article div:nth-of-type(6) {
 }
 /* *************** vierde LIGHTSABER CODE: DARTH MAUL*************** */
 
+ol li:nth-of-type(4) img {
+  z-index: -1;
+}
+
+/* Rechter buttons op saber */
 ol li:nth-of-type(4) button:first-of-type {
   position: relative;
   background: rgb(168, 0, 0);
@@ -917,6 +942,7 @@ ol li:nth-of-type(4) button:first-of-type {
   border: none;
 }
 
+/* Linker button op saber */
 ol li:nth-of-type(4) button:nth-of-type(2) {
   position: relative;   
   background: rgb(168, 0, 0);
@@ -927,3 +953,48 @@ ol li:nth-of-type(4) button:nth-of-type(2) {
   border-radius: 2em;
   border: none;
 }
+
+/* Linker saber gedeelte */
+ol li:nth-of-type(4) output:first-of-type {
+  position: relative;
+  background: var(--redsaberblade);
+  height: 1.5em;
+  width: 34em;
+  bottom: 11.3em;
+  left: -26em;
+  z-index: -1;
+  border-radius: 1em;
+  visibility: hidden;
+  transform-origin: center right;
+}
+
+/* Rechter saber gedeelte */
+ol li:nth-of-type(4) output:last-of-type {
+  position: relative;
+  background: var(--redsaberblade);
+  height: 1.5em;
+  width: 34em;
+  bottom: 13.1em;
+  left: 26em;
+  z-index: -1;
+  border-radius: 1em;
+  visibility: hidden;
+  transform-origin: center left;
+}
+
+ol li:nth-of-type(4) output:last-of-type.emittingR {
+  visibility:visible;
+  animation: bladesdarkside .05s infinite, growblades .2s;
+}
+
+ol li:nth-of-type(4) output:first-of-type.emittingL {
+  visibility:visible;
+  animation: bladesdarkside .05s infinite, growblades .2s;
+}
+
+@keyframes bladesdarkside {
+  0%    {box-shadow: none;}
+  50%   {box-shadow: 12px 0px 10px 20px #c50404;}
+  100%  {box-shadow: none;}
+}
+
