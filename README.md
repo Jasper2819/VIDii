@@ -84,30 +84,17 @@ blauw
 
 </details>
 
-
 ## Voortgang/Feedback 2
 
 <details>
-  <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
+  <summary>Samenvatting van feedback moment 2 (7-11-2022)</summary>
   
-  ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  ### Bevindingen:
+  Vandaag had ik een feedbakc moment met Mila uit de klas. Nadat ik haar feedback had gegeven, vulde ze voor mij een beoordelingsformulier in. Ze omcirkelde op het begin meerdere malen 'ja'. Echter toen ze verder ging kwamen we bij het eerste punt van verbetering, en dat is dat de afbeeldingen (welke tevoorschijn komen als je op een planeet klikt) nog geen goeie verhoudingen hebben. Dit klopt aangezien dit afbeeldingen waren waarmee ik de functie aan het testen was. Ook de kwaliteit van de afbeeldingen mag een stuk beter.
+
+  Als volgende punt was er aan te merken dat wel alles goed te bereiken was met de 'tab' toets, maar nog geen interactieve elementen bevatten. Ik mag ook meer gebruik gaan maken van een bijvoorbeeld 
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
-
-
-  ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
-
-  #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
-
-
-  ### Bevinding 3:
-  ...
 
 </details>
 
@@ -176,7 +163,7 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
 1. Afbeelding voor de favicon: https://www.freeimages.com/nl/psd/light-saber-handle-psd-5149199?ref=vectorhq (gratis afbeelding).
 
-2. Hulp met het vinden van allerlei states en tags 
+2. Hulp met het vinden van allerlei states en tags
 https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translateX
 
 3. Met behulp van een generator, kon ik lastige vormen eenvoudig in mijn code zetten. https://bennettfeely.com/clippy/.
@@ -186,8 +173,9 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translateX
 5. Site waar de afbeeldingen van planeten afkomen: de planeet Endor https://www.pngegg.com/en/search?q=tatooine, voor Naboo heb ik https://www.swcombine.com/rules/?Races&ID=65 bezocht en de overige afbeeldingen qua planeten en omgevingen heb ik van https://www.starwars.com.
 Voor de achtergrond sterren ben ik naar https://transparenttextures.com/patterns/stardust.png gegaan.
 
-De cursor afbeelding komt van https://icons8.com/icons/set/star-wars.
+6. De cursor afbeelding komt van https://icons8.com/icons/set/star-wars.
 
-Audio voor de lightsabers komt van https://www.soundboard.com/sb/sound/930991.
+7. Audio voor de lightsabers komt van https://www.soundboard.com/sb/sound/930991.
 
+8. De fonts voor de star wars fonts heb ik van https://www.dafont.com/aurebesh.font
 </details>

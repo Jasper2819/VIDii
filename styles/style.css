@@ -1,9 +1,16 @@
 @font-face {
+  font-style: normal;
+  font-weight: normal;
   font-family: 'starwars';
   src: url('../Fonts/starjedi-webfont.woff2') format('woff2'),
        url('../Fonts/starjedi-webfont.woff2') format('woff');
+}
+
+@font-face {
+  font-family: aurebesh;
   font-weight: normal;
   font-style: normal;
+  src: url('../Fonts/Aurebesh\ Bold.woff2') format('woff2');
 }
 
 /*************/
@@ -12,18 +19,17 @@
 
 /* naar een idee van Jen Simmons */
 *, *::after, *::before {
-  box-sizing:border-box;  
   margin:0;
 	padding:0; 
+  box-sizing:border-box;
 }
 
 body {
   margin:0;
-  background: rgb(0, 0, 0);
-  background-image: url('../images/stardust.png');
-  /* background-image: url('../images/starry-night-sky.jpg'); */
   text-align: center; 
   place-content: center;
+  background: rgb(0, 0, 0);
+  background-image: url('../images/stardust.png');
   animation: stars 30s linear infinite;
   cursor: url('../Cursors/icons8-star-wars-naboo-ship-48.png') 25 15, auto;
 }
@@ -34,38 +40,25 @@ body {
   100% {background-position: 50em 50em;}
 }
 
-@keyframes boslopen {
-  0% {background-position: 0 0;}
-  33% {background-position: 30em 0em;}
-  66% {background-position: 0em 0em;}
-  90% {background-position: -30em 0em;}
-  100% {background-position: 0em 0em;}
-
-}
-
 body.Endor {
-  background-image: url('../images/Bosachtergrond.jpg');
   animation: none;
   background-size: 100vw 50vh;
-  /* object-fit: cover; */
   background-repeat: no-repeat;
+  background-image: url('../images/Bosachtergrond.jpg');
 }
 
 body.Tatooine {
-  background-image: url('../images/tatooine2.jpg');
   animation: none;
   background-size: 100vw 50vh;
-  /* object-fit: cover; */
   background-repeat: no-repeat;
 }
 
 body.Felucia {
-  background-image: url(../images/BattleOfFelucia-Night.jpg);
-  /* background-size: 100vw 33em; */
+  animation: none;
   background-size: contain;
   background-repeat: no-repeat;
   background-color: rgb(24, 24, 24);
-  animation: none;
+  background-image: url(../images/BattleOfFelucia-Night.jpg);
 }
 
 button:not([disabled]) {
@@ -78,6 +71,7 @@ section article ul button {
 
 /*************************************************/
 /* KEYFRAMES EN ANIMATIES VOOR OPSTARTEN WEBSITE */
+/*************************************************/
 
 @keyframes letterscroll {
   0% {transform: scale(10);}
@@ -88,55 +82,72 @@ section article ul button {
   0% {opacity: 0;}
   100% {opacity: 1;}
 }
-
 /* animation: 8s ease-out 0s 1 whoom; toevoegen bij juiste element */
 
 /******************/
 /* HAMBURGER MENU */
 /******************/
 
+@keyframes hamburger {
+  0%  {transform: scale(0);}
+  100%  {transform: scale(1);}
+}
+
 header button:first-of-type {
+  border: none;
+  border: none;
   display: flex;
+  position: fixed;
+  background: none;
   align-self: flex-start;
   flex-direction: column;
-  background: none;
-  position: fixed;
-  border: none;
 }
 
 header button:first-of-type img {
-  transform: rotate(45deg);
-  margin-bottom: -2.5em;
   margin-left: 1em;
+  margin-bottom: -2.5em;
+  transform: rotate(45deg);
 }
 
 nav ul {
   position: fixed;
-  background-color: var(--dookukleur);
-  border: none;
   margin: 0;
-  padding: 2em 4em 10em 1em;
+  padding: 2em 4em 10em 10em;
   display: flex;
   flex-direction: column;
+  transform-origin: top left;
+  z-index: 2;
 
+  background-color: var(--dookukleur);
+  border: none;
+  
   visibility: hidden;
+  
 }
+
 nav ul.open {
   visibility: visible;
+  animation: hamburger .1s linear;
+}
+
+nav ul.open li img {
+  display:flex;
+  left: -9em;
+  bottom: 1.5em;
+  position: relative;
+  transform: scale(0.7);
 }
 
 header ul li:nth-of-type(2) button {
   background: white;
-  left: 1em;
+  font-family: aurebesh;
+  left: 2em;
   margin-top: 5em;
   padding: 1em;
-  border: 0.5em solid black;
-  
+  border: 3px solid red;
 }
 
-header button:nth-of-type(2) {
 
-}
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
@@ -236,8 +247,7 @@ section article ul button:nth-of-type(3) img {
 }
 
 section article ul button:nth-of-type(3) {
-  background: none;
-  
+  background: none; 
 }
 
 /* BUTTON 4 Naboo */
@@ -278,6 +288,15 @@ h2 {
   padding-top: 2em;
 }
 
+h3 {
+  color: var(--color-headings);
+  display:grid;
+  justify-content: center;
+  font-family: "starwars" , sans-serif;
+  letter-spacing: 0.1em;
+  padding-top: 2em;
+}
+
 ol li:first-of-type h2 {
   color: var(--color-headings);
   display: grid;
@@ -290,6 +309,7 @@ p {
   color: var(--Kleur-basis-tekst);
   font-family: "starwars", sans-serif;
   letter-spacing: 0.1em;
+  white-space: pre;
 }
 
 section article ul:nth-of-type(2) p {
@@ -297,10 +317,9 @@ section article ul:nth-of-type(2) p {
   padding-left: 4em;
 }
 
-/* section article ul:nth-of-type(2) p:nth-of-type(2) {
-  padding-left: 
-} */
-
+main section:first-of-type p {
+  line-break: auto;
+}
 
 ol {
   list-style: none;
@@ -924,7 +943,10 @@ ol li:nth-of-type(3) article div:nth-of-type(6) {
   bottom: 0em;
   transform: rotate(-76.5deg);
 }
-/* *************** vierde LIGHTSABER CODE: DARTH MAUL*************** */
+
+/**********************************************/
+/* LIGHTSABER CODE: INquisitor, 4e lightsaber */
+/**********************************************/
 
 ol li:nth-of-type(4) img {
   z-index: -1;
@@ -998,3 +1020,54 @@ ol li:nth-of-type(4) output:first-of-type.emittingL {
   100%  {box-shadow: none;}
 }
 
+/*******************************/
+/* LIGHTSABER CODE: Death Star */
+/*******************************/
+
+/* button van de death star */
+ol li:nth-of-type(5) button {
+  background: none;
+}
+
+ol li:nth-of-type(5) img {
+  animation-timing-function: linear;
+  transform: translateX(-53em) rotate(-90deg);
+}
+
+ol li:nth-of-type(5) img.firing {
+  animation-name: firingdeathstar;
+  animation-duration: 6s;
+  
+  animation-timing-function: cubic-bezier(0.56, 0.01, 0.94, 0.01);
+}
+
+@keyframes firingdeathstar {
+  0%    {transform: translateX(-53em) rotate(-90deg);}
+
+  100%  {transform: translateX(70em) rotate(-100deg);}
+}
+
+section:first-of-type > img:first-of-type {
+  filter: brightness(0.8);
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 30em;
+  width: 100%;
+  z-index: -1;
+  
+  object-fit: cover;
+  object-position: top;
+}
+
+footer section p {
+  font-family: aurebesh;
+  color: yellow;
+}
+
+footer section img {
+  position: relative;
+  height: 2em;
+  width: 3em;
+}
