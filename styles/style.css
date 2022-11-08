@@ -13,6 +13,22 @@
   src: url('../Fonts/Aurebesh\ Bold.woff2') format('woff2');
 }
 
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+
+:root {
+  --color-headings:yellow;
+  --bluesaberblade: linear-gradient(to bottom, #2989d8 15%,#ffffff 52%,#2989d8 89%);
+  --redsaberblade: linear-gradient(to bottom, #c70505 15%,#ffffff 52%,#c70505 89%);
+  --Kleur-headings-2: White;
+  --Kleur-basis-tekst: white;
+  --starwars-font: 'starwars';
+  --darthmaulkleur: #98948b;
+  --dookukleur: #828582;
+  --buttonkleur: rgb(177, 5, 5);
+}
+
 /*************/
 /* CSS RESET */
 /*************/
@@ -61,9 +77,9 @@ body.Felucia {
   background-image: url(../images/BattleOfFelucia-Night.jpg);
 }
 
-button:not([disabled]) {
-  /* cursor: crosshair; */
-}
+/* button:not([disabled]) {
+  /* cursor: crosshair;
+}*/
 
 section article ul button {
   cursor: url('../Cursors/icons8-star-wars-naboo-ship-48.png'), auto;
@@ -149,23 +165,6 @@ header ul li:nth-of-type(2) button {
   border: 3px solid red;
 }
 
-
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
-
-:root {
-  --color-headings:yellow;
-  --bluesaberblade: linear-gradient(to bottom, #2989d8 15%,#ffffff 52%,#2989d8 89%);
-  --redsaberblade: linear-gradient(to bottom, #c70505 15%,#ffffff 52%,#c70505 89%);
-  --Kleur-headings-2: White;
-  --Kleur-basis-tekst: white;
-  --starwars-font: 'starwars';
-  --darthmaulkleur: #98948b;
-  --dookukleur: #828582
-}
-
-
 /********************/
 /* ALGEMENE STYLING */
 /********************/
@@ -177,6 +176,10 @@ section {
 
 section:first-of-type {
   display:grid;
+}
+
+main > section:nth-of-type(1) img[src=""] {
+  display: none;
 }
 
 /*************/
@@ -542,22 +545,15 @@ ol li:first-of-type article button {
 }
 
 @keyframes growblades {
-  0% {transform: scalex(0);}
-  100% {transform: scalex(1);}
+  0% {transform: scalex(0) scaleY(0) }
+  100% {transform: scalex(1) scaleY(1)}
 }
 
 
 /*********************************/
 /* TWEEDE LIGHTSABER: DARTH MAUL */
 /*********************************/
-ol li:nth-of-type(2){
-  /* display:flex; */
-  /* align-items: flex-start; */
-  /* position: relative; */
-  /* display: flex; */
-  /* overflow: hidden; */
-}
- 
+
 ol li:nth-of-type(2) article {
   display:flex;
   flex-wrap: nowrap;
@@ -765,7 +761,7 @@ ol li:nth-of-type(2) article div:nth-of-type(14) {
 /* Button links van het midden */
 ol li:nth-of-type(2) article button:first-of-type {
   position: relative;
-  background: rgb(146, 2, 2);
+  background: var(--buttonkleur);
   height: 1em;
   width: 1em;
   z-index: 1;
@@ -777,7 +773,7 @@ ol li:nth-of-type(2) article button:first-of-type {
 /* Button rechts van het midden */
 ol li:nth-of-type(2) article button:nth-of-type(2) {
   position: relative;
-  background: rgb(146, 2, 2);
+  background: var(--buttonkleur);
   height: 1em;
   width: 1em;
   z-index: 1;
@@ -945,8 +941,52 @@ ol li:nth-of-type(3) article div:nth-of-type(6) {
   transform: rotate(-76.5deg);
 }
 
+/* lijn waar de blade uitkomt */
+ol li:nth-of-type(3) article div:nth-of-type(7) {
+  position: relative;
+  background: rgb(42, 41, 41);
+  border-radius: 1em;
+  height: 4em;
+  width: 0.5em;
+  left: -16em;
+  bottom: -2em;
+  transform: rotate(29deg);
+  z-index: 1;
+}
+
+ol li:nth-of-type(3) article button {
+  background-color: var(--buttonkleur);
+
+  position: relative;
+  height: 0.5em;
+  width: 1.5em;
+  bottom: 2em;
+  left: -30em;
+
+  border-radius: 0.25em 0.25em 0em 0em;
+  border: none;
+  z-index: 0;
+}
+
+ol li:nth-of-type(3) article output {
+  background: var(--redsaberblade);
+  position: absolute;
+  height: 1.5em;
+  width: 31em;
+  left: 12em;
+  bottom: -5.3em;
+  transform: rotate(34deg);
+  z-index: 0;
+  border-radius: 0em 1em 1em 0em;
+  visibility: hidden;
+}
+
+ol li:nth-of-type(3) article output.aan {
+  visibility: visible;
+  animation: bladesdarkside .05s infinite, growblades .2s;
+}
 /**********************************************/
-/* LIGHTSABER CODE: INquisitor, 4e lightsaber */
+/* LIGHTSABER CODE: Inquisitor, 4e lightsaber */
 /**********************************************/
 
 ol li:nth-of-type(4) img {
@@ -956,7 +996,7 @@ ol li:nth-of-type(4) img {
 /* Rechter buttons op saber */
 ol li:nth-of-type(4) button:first-of-type {
   position: relative;
-  background: rgb(168, 0, 0);
+  background: var(--buttonkleur);
   height: 2em;
   width: 2em;
   bottom: 10em;
@@ -968,7 +1008,7 @@ ol li:nth-of-type(4) button:first-of-type {
 /* Linker button op saber */
 ol li:nth-of-type(4) button:nth-of-type(2) {
   position: relative;   
-  background: rgb(168, 0, 0);
+  background: var(--buttonkleur);
   height: 2em;
   width: 2em;
   bottom: 12em;
@@ -1021,9 +1061,9 @@ ol li:nth-of-type(4) output:first-of-type.emittingL {
   100%  {box-shadow: none;}
 }
 
-/*******************************/
-/* LIGHTSABER CODE: Death Star */
-/*******************************/
+/********************/
+/* Millenium Falcon */
+/********************/
 
 /* button van de death star */
 ol li:nth-of-type(5) button {
@@ -1032,20 +1072,26 @@ ol li:nth-of-type(5) button {
 
 ol li:nth-of-type(5) img {
   animation-timing-function: linear;
-  transform: translateX(-53em) rotate(-90deg);
+  transform: translateX(-65em) rotate(-90deg);
 }
 
 ol li:nth-of-type(5) img.firing {
-  animation-name: firingdeathstar;
+  animation-name: firingdeathstar, lightspeedflash;
   animation-duration: 6s;
-  
   animation-timing-function: cubic-bezier(0.56, 0.01, 0.94, 0.01);
 }
 
 @keyframes firingdeathstar {
-  0%    {transform: translateX(-53em) rotate(-90deg);}
-
+  0%    {transform: translateX(-65em) rotate(-90deg);}
   100%  {transform: translateX(70em) rotate(-100deg);}
+}
+
+@keyframes lightspeedflash {
+  0%    {box-shadow: none;}
+  92%   {box-shadow: none;}
+  94%   {box-shadow: 0px -40px 30px 5px rgb(29, 175, 243);}
+  96%   {box-shadow: none;}
+  100%  {box-shadow: none;}
 }
 
 section:first-of-type > img:first-of-type {
@@ -1062,6 +1108,149 @@ section:first-of-type > img:first-of-type {
   object-position: top;
 }
 
+/*****************************/
+/* Laatste saber: Kylo Ren */
+/*****************************/
+
+ol li:nth-of-type(6) header {
+  transform: scale(1.5);
+  z-index: 1;
+}
+
+ol li:nth-of-type(6) button {
+  background-color: var(--buttonkleur);
+
+  position: relative;
+  height: 1.5em;
+  width: 1.5em;
+  bottom: 4.8em;
+  left: 5em;
+
+  border-radius: 1em;
+  border: none;
+  z-index: 1;
+}
+
+/* Lange saber gedeelte */
+ol li:nth-of-type(6) output:first-of-type {
+  background: var(--redsaberblade);
+
+  left: 26em;  
+  width: 30em;  
+  height: 1.5em;
+  bottom: 5.2em;
+  position: relative;
+
+  border: none;
+  border-radius: 0em 1em 1em 0em;
+
+  visibility: hidden;
+  transform-origin: center left;
+  
+}
+
+/* Korte saber gedeelte onder */
+ol li:nth-of-type(6) output:nth-of-type(2) {
+  background: var(--redsaberblade);
+
+  position: relative;
+  bottom: 3em;
+  left: 17.15em;
+  width: 15em;
+  height: 1.5em;
+  
+  transform: rotate(90deg) scaleX(0) scaleY(0);
+
+  border: none;
+  border-radius: 0em 1em 1em 0em;
+
+  transform-origin: left center;
+  transition-delay: 1s;
+  transition: .1s;
+}
+
+/* Korte saber gedeelte boven */
+ol li:nth-of-type(6) output:nth-of-type(3) {
+  background: var(--redsaberblade);
+
+  position: relative;
+  top: -12em;
+  left: 17.15em;
+  width: 15em;
+  height: 1.5em;
+  
+  transform: rotate(-90deg) scaleX(0) scaleY(0);
+ 
+
+  border: none;
+  border-radius: 0em 1em 1em 0em;
+
+  transform-origin: left center;
+  transition-delay: 1s;
+  transition: .1s;
+}
+
+ol li:nth-of-type(6) output:first-of-type.activate {
+  visibility: visible;
+  animation: bladesdarkside .05s infinite, growblades .2s;
+}
+
+ol li:nth-of-type(6) output:nth-of-type(2).activate {
+  animation: bladesdarkside .05s infinite;
+  transform: rotate(90deg) scaleX(1) scaleY(1);
+}
+
+/* boven */
+ol li:nth-of-type(6) output:nth-of-type(3).activate {
+  animation: bladesdarkside .05s infinite;
+  transform: rotate(-90deg) scaleX(1) scaleY(1);
+}
+
+@keyframes kylorenrotate {
+  0% {transform: rotate(0deg)}
+  100% {transform: rotate(90deg);}
+}
+
+/***********************/
+/* animatie hello there */
+/***********************/
+
+/* ol li:last-of-type {
+  flex-direction: row;
+  padding: 0;
+} */
+
+
+ol li:last-of-type button {
+  position: relative;
+  font-family: aurebesh;
+  border: 0.25em solid var(--buttonkleur);
+}
+
+ol li:last-of-type img:first-of-type {
+  position: relative;
+  transform: scale(0.7);
+  bottom: 3em;
+}
+
+ol li:last-of-type img:last-of-type {
+  position: relative;
+  transform: scale(0.25);
+  transform
+  bottom: 50em;
+}
+
+
+
+
+
+
+
+
+
+/***********************/
+/* Footer instellingen */
+/***********************/
 footer section p {
   font-family: aurebesh;
   color: yellow;

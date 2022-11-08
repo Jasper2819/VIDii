@@ -178,4 +178,7 @@ Voor de achtergrond sterren ben ik naar https://transparenttextures.com/patterns
 7. Audio voor de lightsabers komt van https://www.soundboard.com/sb/sound/930991.
 
 8. De fonts voor de star wars fonts heb ik van https://www.dafont.com/aurebesh.font
+
+9. De afbeeldingen voor de animaties van General Kenobi en General Grievous heb ik van de volgende site. https://www.deviantart.com/darthspidermaul/art/Obi-Wan-Kenobi-PNG-833204088.
+
 </details>

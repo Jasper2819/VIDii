@@ -17,11 +17,13 @@ var saberinqL = document.querySelector("ol li:nth-of-type(4) output:first-of-typ
 var body = document.querySelector("body");
 var knopplaneet1 = document.querySelector("section article ul button:nth-of-type(1)");
 
-var audioanakin = new Audio("Sounds/lightsaber_02.mp3");
-var audiodarkside = new Audio("Sounds/SaberOn.mp3");
-var audiohappybeeps = new Audio("Sounds/HappyThreeChirp.mp3");
-var audiodeathstar = new Audio("Sounds/superlaser.mp3");
-var audiohyperspace = new Audio("Sounds/jumptolightspeed.mp3");
+var audioanakin = new Audio("sounds/lightsaber_02.mp3");
+var audiodarkside = new Audio("sounds/SaberOn.mp3");
+var audiohappybeeps = new Audio("sounds/HappyThreeChirp.mp3");
+var audiodeathstar = new Audio("sounds/superlaser.mp3");
+var audiohyperspace = new Audio("sounds/jumptolightspeed.mp3");
+var audiokylorensaber = new Audio("sounds/kylo_ren_lightsaber_trimmed.mp3");
+var audiogoodjob = new Audio("sounds/good-job-trimmed.mp3");
 
 var body = document.querySelector("body");
 var knopplaneet1 = document.querySelector("section article ul button:nth-of-type(1)");
@@ -107,6 +109,7 @@ hamburgerButton.addEventListener("click", function() {
 
 closebutton.addEventListener("click", function() {
     nav.classList.toggle("open");
+    audiogoodjob.play();
 })
 
 var imagedeathstar = document.querySelector("ol li:nth-of-type(5) img");
@@ -114,4 +117,26 @@ var deathstar =  document.querySelector("ol li:nth-of-type(5) button");
 deathstar.addEventListener("click", function(){
     imagedeathstar.classList.toggle("firing");
     audiohyperspace.play();
+})
+
+var buttonkyloren = document.querySelector("ol li:nth-of-type(6) button");
+var bladelangkylo = document.querySelector("ol li:nth-of-type(6) output:first-of-type");
+var bladekortonderkylo = document.querySelector("ol li:nth-of-type(6) output:nth-of-type(2)");
+var bladekortbovenkylo = document.querySelector("ol li:nth-of-type(6) output:nth-of-type(3)");
+
+buttonkyloren.addEventListener("click", function() {
+    bladelangkylo.classList.toggle("activate");
+    bladekortonderkylo.classList.toggle("activate");
+    bladekortbovenkylo.classList.toggle("activate");
+    audiokylorensaber.play();
+
+    console.log('lighstaber kylo ren aan');
+})
+
+var buttondooku = document.querySelector("ol li:nth-of-type(3) article button");
+var bladedooku = document.querySelector("ol li:nth-of-type(3) article output");
+
+buttondooku.addEventListener("click", function() {
+    bladedooku.classList.toggle("aan");
+    audiodarkside.play();
 })
