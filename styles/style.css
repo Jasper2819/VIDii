@@ -1,16 +1,16 @@
 @font-face {
   font-style: normal;
   font-weight: normal;
-  font-family: 'starwars';
-  src: url('../Fonts/starjedi-webfont.woff2') format('woff2'),
-       url('../Fonts/starjedi-webfont.woff2') format('woff');
+  font-family: "starwars";
+  src: url("../Fonts/starjedi-webfont.woff2") format("woff2"),
+    url("../Fonts/starjedi-webfont.woff2") format("woff");
 }
 
 @font-face {
   font-family: aurebesh;
   font-weight: normal;
   font-style: normal;
-  src: url('../Fonts/Aurebesh\ Bold.woff2') format('woff2');
+  src: url("../Fonts/Aurebesh\ Bold.woff2") format("woff2");
 }
 
 /*********************/
@@ -18,12 +18,21 @@
 /*********************/
 
 :root {
-  --color-headings:yellow;
-  --bluesaberblade: linear-gradient(to bottom, #2989d8 15%,#ffffff 52%,#2989d8 89%);
-  --redsaberblade: linear-gradient(to bottom, #c70505 15%,#ffffff 52%,#c70505 89%);
+  --color-headings: yellow;
+  --bluesaberblade: linear-gradient(
+    to bottom,
+    #2989d8 15%,
+    #ffffff 52%,
+    #2989d8 89%);
+    
+  --redsaberblade: linear-gradient(
+    to bottom,
+    #c70505 15%,
+    #ffffff 52%,
+    #c70505 89%);
   --Kleur-headings-2: White;
   --Kleur-basis-tekst: white;
-  --starwars-font: 'starwars';
+  --starwars-font: "starwars";
   --darthmaulkleur: #98948b;
   --dookukleur: #828582;
   --buttonkleur: rgb(177, 5, 5);
@@ -33,34 +42,52 @@
 /* CSS RESET */
 /*************/
 
-/* naar een idee van Jen Simmons */
-*, *::after, *::before {
-  margin:0;
-	padding:0; 
-  box-sizing:border-box;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  margin:0;
-  text-align: center; 
+  margin: 0;
+  text-align: center;
   place-content: center;
   background: rgb(0, 0, 0);
-  background-image: url('../images/stardust.png');
+  background-image: url("../images/stardust.png");
   animation: stars 30s linear infinite;
-  cursor: url('../Cursors/icons8-star-wars-naboo-ship-48.png') 25 15, auto;
+  cursor: url("../Cursors/icons8-star-wars-naboo-ship-48.png") 25 15, auto;
+}
+
+section:first-of-type > img:first-of-type {
+  filter: brightness(0.8);
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 30em;
+  width: 100%;
+  z-index: -1;
+
+  object-fit: cover;
+  object-position: top;
 }
 
 @keyframes stars {
   0% {background-position: 0 0;}
 
-  100% {background-position: 50em 50em;}
+  100% {
+    background-position: 50em 50em;
+  }
 }
 
 body.Endor {
   animation: none;
   background-size: 100vw 50vh;
   background-repeat: no-repeat;
-  background-image: url('../images/Bosachtergrond.jpg');
+  background-image: url("../images/Bosachtergrond.jpg");
 }
 
 body.Tatooine {
@@ -74,15 +101,11 @@ body.Felucia {
   background-size: contain;
   background-repeat: no-repeat;
   background-color: rgb(24, 24, 24);
-  background-image: url(../images/BattleOfFelucia-Night.jpg);
+  background-image: url("../images/BattleOfFelucia-Night.jpg");
 }
 
-/* button:not([disabled]) {
-  /* cursor: crosshair;
-}*/
-
 section article ul button {
-  cursor: url('../Cursors/icons8-star-wars-naboo-ship-48.png'), auto;
+  cursor: url("../Cursors/icons8-star-wars-naboo-ship-48.png"), auto;
 }
 
 /*************************************************/
@@ -90,13 +113,21 @@ section article ul button {
 /*************************************************/
 
 @keyframes letterscroll {
-  0% {transform: scale(10);}
-  100% {transform: scale(1);}
+  0% {
+    transform: scale(10);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 /* animation: 4s ease-in 1s 1 normal forwards whoom; */
 @keyframes whoom {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /* animation: 8s ease-out 0s 1 whoom; toevoegen bij juiste element */
 
@@ -105,8 +136,12 @@ section article ul button {
 /******************/
 
 @keyframes hamburger {
-  0%  {transform: scale(0);}
-  100%  {transform: scale(1);}
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 header button:first-of-type {
@@ -136,18 +171,17 @@ nav ul {
 
   background-color: var(--dookukleur);
   border: none;
-  
+
   visibility: hidden;
-  
 }
 
 nav ul.open {
   visibility: visible;
-  animation: hamburger .1s linear;
+  animation: hamburger 0.1s linear;
 }
 
 nav ul.open li img {
-  display:flex;
+  display: flex;
   left: -9em;
   bottom: 1.5em;
   position: relative;
@@ -170,12 +204,12 @@ header ul li:nth-of-type(2) button {
 /********************/
 
 section {
-  display: flex;  
-  justify-content: center;  
+  display: flex;
+  justify-content: center;
 }
 
 section:first-of-type {
-  display:grid;
+  display: grid;
 }
 
 main > section:nth-of-type(1) img[src=""] {
@@ -187,12 +221,16 @@ main > section:nth-of-type(1) img[src=""] {
 /*************/
 
 @keyframes draaiend {
-  0%  {transform: rotate(0deg);}
-  100%  {transform: rotate(360deg);}
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 section article ul {
-  display:flex;
+  display: flex;
   flex-flow: row wrap;
 }
 
@@ -249,7 +287,7 @@ section article ul button:nth-of-type(3) img {
 }
 
 section article ul button:nth-of-type(3) {
-  background: none; 
+  background: none;
 }
 
 /* BUTTON 4 Naboo */
@@ -265,41 +303,40 @@ section article ul button:last-of-type {
 }
 
 /**********************************************************/
-/* Algemene instelling teksten teksten, sections en lists */
+/* Algemene instelling teksten, sections en lists */
 /**********************************************************/
 
 h1 {
   color: var(--color-headings);
 
-  top: 1em;  
-  display:grid;
+  top: 1em;
+  display: grid;
   text-align: center;
   justify-content: center;
 
-  font-family: "starwars" , sans-serif;
+  font-family: "starwars", sans-serif;
   letter-spacing: 0.1em;
 }
 
 h2 {
   color: var(--color-headings);
 
-  display:grid;
+  display: grid;
   padding-top: 2em;
   justify-content: center;
 
   letter-spacing: 0.1em;
-  font-family: "starwars" , sans-serif;
+  font-family: "starwars", sans-serif;
 }
 
 h3 {
   color: var(--color-headings);
 
-  display:grid;
+  display: grid;
   padding-top: 2em;
   justify-content: center;
-  
 
-  font-family: "starwars" , sans-serif;
+  font-family: "starwars", sans-serif;
   letter-spacing: 0.1em;
 }
 
@@ -309,7 +346,7 @@ ol li:first-of-type h2 {
   display: grid;
   justify-content: center;
 
-  font-family: "starwars" , sans-serif;
+  font-family: "starwars", sans-serif;
   letter-spacing: 0.1em;
 }
 
@@ -331,7 +368,7 @@ ol {
 
   gap: 3em;
   height: 100%;
-  padding: 2em;  
+  padding: 2em;
   display: flex;
   flex-direction: column;
 }
@@ -340,7 +377,7 @@ ol > li {
   /* border: 0.5em solid black;    Bepaal of er een border om de lists komt */
   padding: 10px;
   min-height: 15em;
-  display: flex;  
+  display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -351,7 +388,7 @@ li {
 }
 
 ul {
-  display:  flex;
+  display: flex;
   align-items: center;
   position: relative;
 }
@@ -366,7 +403,7 @@ section article ul:nth-of-type(2) {
 /*****************************/
 
 ol li:first-of-type article {
-  display:flex;
+  display: flex;
   flex-wrap: nowrap;
   position: absolute;
   align-items: center;
@@ -384,9 +421,9 @@ ol li:first-of-type article header {
 }
 
 /* Plek met buttons */
-ol li:first-of-type article strong { 
+ol li:first-of-type article strong {
   position: relative;
-  background-color:rgb(53, 53, 53);
+  background-color: rgb(53, 53, 53);
   border: 3px solid black;
   border-radius: 0.25em;
   width: 3em;
@@ -441,7 +478,18 @@ ol li:first-of-type article div:nth-of-type(4) {
   background-color: rgb(172, 171, 171);
   height: 3em;
   width: 3em;
-  clip-path: polygon(50% 0%, 100% 0, 97% 20%, 88% 33%, 71% 44%, 52% 57%, 38% 74%, 33% 100%, 0 100%, 0 0);
+  clip-path: polygon(
+    50% 0%,
+    100% 0,
+    97% 20%,
+    88% 33%,
+    71% 44%,
+    52% 57%,
+    38% 74%,
+    33% 100%,
+    0 100%,
+    0 0
+  );
   right: 15em;
 }
 
@@ -453,16 +501,12 @@ ol li:first-of-type article button {
   border: 1px solid black;
   right: 33.6em;
   bottom: 2.2em;
-  
+
   /* clip-path: polygon(36% 56%, 50% 65%, 68% 68%, 83% 64%, 
   100% 67%, 100% 100%, 0 100%, 0 62%, 9% 53%, 22% 50%); */
 }
 
-/* ol li:first-of-type article button:focus {
-  transform: translateY(.2em);
-
-} */
-
+/* Onderdeel aan de voorkant van de lightsaber */
 .bladespuit {
   position: relative;
   background-color: rgb(54, 54, 54);
@@ -473,6 +517,7 @@ ol li:first-of-type article button {
   z-index: -1;
 }
 
+/* Onderdeel aan de voorkant van de lightsaber */
 .bladespuit1 {
   position: relative;
   border: 1px solid black;
@@ -484,6 +529,7 @@ ol li:first-of-type article button {
   z-index: -1;
 }
 
+/* Onderdeel aan de voorkant van de lightsaber */
 .bladespuit2 {
   position: relative;
   border: 1px solid black;
@@ -494,6 +540,7 @@ ol li:first-of-type article button {
   right: 16em;
 }
 
+/* Onderdeel aan de voorkant van de lightsaber */
 .bladespuit3 {
   position: relative;
   border: 1px solid black;
@@ -508,7 +555,7 @@ ol li:first-of-type article button {
 .clip {
   position: relative;
   border: 1px solid black;
-  background-color:rgb(172, 171, 171);
+  background-color: rgb(172, 171, 171);
   height: 2em;
   width: 1em;
   border-radius: 1em 1em 0 0;
@@ -518,10 +565,8 @@ ol li:first-of-type article button {
 }
 
 /* Blade van de lightsaber */
-
 .blade {
   position: relative;
-  /* border: 2px solid black; */
   border-radius: 0em 1em 1em 0em;
   background: var(--bluesaberblade);
   height: 1.5em;
@@ -535,40 +580,36 @@ ol li:first-of-type article button {
 
 .blade.open {
   display: block;
-  animation: bladeslightside .05s infinite, growblades .2s;
+  animation: bladeslightside 0.05s infinite, growblades 0.2s;
 }
 
 @keyframes bladeslightside {
-  0%    {box-shadow: none;}
-  50%   {box-shadow: 12px 0px 10px 20px #2989d8;}
-  100%  {box-shadow: none;}
+  0% {box-shadow: none;}
+  50% {box-shadow: 12px 0px 10px 20px #2989d8;}
+  100% {box-shadow: none;}
 }
 
 @keyframes growblades {
-  0% {transform: scalex(0) scaleY(0) }
-  100% {transform: scalex(1) scaleY(1)}
+  0% {transform: scalex(0) scaleY(0);}
+  100% {transform: scalex(1) scaleY(1);}
 }
-
 
 /*********************************/
 /* TWEEDE LIGHTSABER: DARTH MAUL */
 /*********************************/
 
 ol li:nth-of-type(2) article {
-  display:flex;
+  display: flex;
   flex-wrap: nowrap;
   align-items: center;
-    /*Door deze te veranderen, akn je de gehele lightsaber verplaatsen */
-  /* width: 100%; */
   justify-content: center;
   position: absolute;
 }
 
-/* MAIN FRAME LIGHTSABER 2 */
+/* Main frame van Darth Maul's lightsaber */
 ol li:nth-of-type(2) article header {
   position: relative;
   background-color: var(--darthmaulkleur);
-  /* box-shadow: inset 0px 0px 20px 2px rgb(172, 171, 171); */
   height: 3em;
   width: 35em;
   left: 34%;
@@ -578,12 +619,25 @@ ol li:nth-of-type(2) article header {
 ol li:nth-of-type(2) article strong:nth-of-type(1) {
   position: relative;
   background: linear-gradient(
-    to left, 
-    #98948b 7%,#000000 13%,
-    #98948b 19%,#98948b 27%,#000000 31%,#98948b 35%,
-    #98948b 35%,#98948b 43%,#000000 49%,#000000 49%,
-    #98948b 55%,#98948b 63%,#000000 67%,#98948b 71%,
-    #98948b 79%,#000000 85%,#000000 85%,#98948b 91%);
+    to left,
+    #98948b 7%,
+    #000000 13%,
+    #98948b 19%,
+    #98948b 27%,
+    #000000 31%,
+    #98948b 35%,
+    #98948b 35%,
+    #98948b 43%,
+    #000000 49%,
+    #000000 49%,
+    #98948b 55%,
+    #98948b 63%,
+    #000000 67%,
+    #98948b 71%,
+    #98948b 79%,
+    #000000 85%,
+    #000000 85%,
+    #98948b 91%);
   height: 3.1em;
   width: 4em;
   right: -27em;
@@ -594,12 +648,25 @@ ol li:nth-of-type(2) article strong:nth-of-type(1) {
 ol li:nth-of-type(2) article strong:nth-of-type(2) {
   position: relative;
   background: linear-gradient(
-    to left, 
-    #98948b 7%,#000000 13%,
-    #98948b 19%,#98948b 27%,#000000 31%,#98948b 35%,
-    #98948b 35%,#98948b 43%,#000000 49%,#000000 49%,
-    #98948b 55%,#98948b 63%,#000000 67%,#98948b 71%,
-    #98948b 79%,#000000 85%,#000000 85%,#98948b 91%);
+    to left,
+    #98948b 7%,
+    #000000 13%,
+    #98948b 19%,
+    #98948b 27%,
+    #000000 31%,
+    #98948b 35%,
+    #98948b 35%,
+    #98948b 43%,
+    #000000 49%,
+    #000000 49%,
+    #98948b 55%,
+    #98948b 63%,
+    #000000 67%,
+    #98948b 71%,
+    #98948b 79%,
+    #000000 85%,
+    #000000 85%,
+    #98948b 91%);
   height: 3.1em;
   width: 4em;
   right: -4em;
@@ -616,7 +683,7 @@ ol li:nth-of-type(2) article div:nth-of-type(1) {
   z-index: 2;
 }
 
-/* linker emitter blok */
+/* Linker emitter blok */
 ol li:nth-of-type(2) article div:nth-of-type(2) {
   position: relative;
   background: var(--darthmaulkleur);
@@ -625,7 +692,7 @@ ol li:nth-of-type(2) article div:nth-of-type(2) {
   left: -10em;
 }
 
-/* rechter emitter blok */
+/* Rechter emitter blok */
 ol li:nth-of-type(2) article div:nth-of-type(3) {
   position: relative;
   background: var(--darthmaulkleur);
@@ -652,7 +719,7 @@ ol li:nth-of-type(2) article div:nth-of-type(5) {
   left: 28.9em;
 }
 
-/* Shading onderdeel */
+/* Shading streep op Darth Maul's lighstsaber */
 ol li:nth-of-type(2) article div:nth-of-type(6) {
   position: relative;
   background: rgb(179, 175, 175);
@@ -672,11 +739,20 @@ ol li:nth-of-type(2) article div:nth-of-type(7) {
   left: -47em;
   bottom: 2.5em;
   z-index: 0;
-  clip-path: polygon(52% 87%, 66% 83%, 80% 76%, 
-  91% 78%, 99% 86%, 100% 100%, 0 100%, 4% 93%, 14% 88%, 32% 86%);
+  clip-path: polygon(
+    52% 87%,
+    66% 83%,
+    80% 76%,
+    91% 78%,
+    99% 86%,
+    100% 100%,
+    0 100%,
+    4% 93%,
+    14% 88%,
+    32% 86%);
 }
 
-/* linker gebogen vorm, onder */
+/* Linker gebogen vorm, onder */
 ol li:nth-of-type(2) article div:nth-of-type(8) {
   position: relative;
   background: var(--darthmaulkleur);
@@ -685,12 +761,21 @@ ol li:nth-of-type(2) article div:nth-of-type(8) {
   left: -49.9em;
   bottom: -2.5em;
   z-index: 0;
-  clip-path: polygon(52% 87%, 66% 83%, 80% 76%, 
-  91% 78%, 99% 86%, 100% 100%, 0 100%, 4% 93%, 14% 88%, 32% 86%);
-  transform: scale(1, -2)
+  clip-path: polygon(
+    52% 87%,
+    66% 83%,
+    80% 76%,
+    91% 78%,
+    99% 86%,
+    100% 100%,
+    0 100%,
+    4% 93%,
+    14% 88%,
+    32% 86%);
+  transform: scale(1, -2);
 }
 
-/* linker streep bij emitter, 2e van boven */
+/* Linker streep bij emitter, 2e van boven */
 ol li:nth-of-type(2) article div:nth-of-type(9) {
   position: relative;
   background: var(--darthmaulkleur);
@@ -700,7 +785,7 @@ ol li:nth-of-type(2) article div:nth-of-type(9) {
   bottom: 0.6em;
 }
 
-/* linker streep bij emitter, 3e van boven */
+/* Linker streep bij emitter, 3e van boven */
 ol li:nth-of-type(2) article div:nth-of-type(10) {
   position: relative;
   background: var(--darthmaulkleur);
@@ -710,7 +795,7 @@ ol li:nth-of-type(2) article div:nth-of-type(10) {
   bottom: -0.7em;
 }
 
-/* rechter gebogen vorm, onder */
+/* Rechter gebogen vorm, onder */
 ol li:nth-of-type(2) article div:nth-of-type(11) {
   position: relative;
   background: var(--darthmaulkleur);
@@ -720,11 +805,20 @@ ol li:nth-of-type(2) article div:nth-of-type(11) {
   bottom: -2.5em;
   z-index: 0;
   transform: rotate(180deg);
-  clip-path: polygon(52% 87%, 66% 83%, 80% 76%, 
-  91% 78%, 99% 86%, 100% 100%, 0 100%, 4% 93%, 14% 88%, 32% 86%);
+  clip-path: polygon(
+    52% 87%,
+    66% 83%,
+    80% 76%,
+    91% 78%,
+    99% 86%,
+    100% 100%,
+    0 100%,
+    4% 93%,
+    14% 88%,
+    32% 86%);
 }
 
-/* rechter gebogen vorm, boven */
+/* Rechter gebogen vorm, boven */
 ol li:nth-of-type(2) article div:nth-of-type(12) {
   position: relative;
   background: var(--darthmaulkleur);
@@ -733,12 +827,21 @@ ol li:nth-of-type(2) article div:nth-of-type(12) {
   left: -24.8em;
   bottom: 2.5em;
   z-index: 0;
-  clip-path: polygon(52% 87%, 66% 83%, 80% 76%, 
-  91% 78%, 99% 86%, 100% 100%, 0 100%, 4% 93%, 14% 88%, 32% 86%);
+  clip-path: polygon(
+    52% 87%,
+    66% 83%,
+    80% 76%,
+    91% 78%,
+    99% 86%,
+    100% 100%,
+    0 100%,
+    4% 93%,
+    14% 88%,
+    32% 86%);
   transform: scale(-1, 1);
 }
 
-/* rechter streep 2e van boven */
+/* Rechter streep 2e van boven */
 ol li:nth-of-type(2) article div:nth-of-type(13) {
   position: relative;
   background: var(--darthmaulkleur);
@@ -748,7 +851,7 @@ ol li:nth-of-type(2) article div:nth-of-type(13) {
   bottom: 0.6em;
 }
 
-/* rechter streep 3e van boven */
+/* Rechter streep 3e van boven */
 ol li:nth-of-type(2) article div:nth-of-type(14) {
   position: relative;
   background: var(--darthmaulkleur);
@@ -782,14 +885,14 @@ ol li:nth-of-type(2) article button:nth-of-type(2) {
   border-radius: 1em;
 }
 
-ol li:nth-of-type(2) article:nth-of-type(2){
+ol li:nth-of-type(2) article:nth-of-type(2) {
   display: flex;
   align-items: center;
 }
 
-/* rechter saber blade van darth maul */
+/* Rechter saber blade van darth maul */
 ol li:nth-of-type(2) article:nth-of-type(2) div:nth-of-type(1) {
-  position:relative;
+  position: relative;
   background: var(--redsaberblade);
   height: 1.5em;
   width: 35em;
@@ -801,7 +904,7 @@ ol li:nth-of-type(2) article:nth-of-type(2) div:nth-of-type(1) {
   transform-origin: center left;
 }
 
-/* linker saber blade van darth maul */
+/* Linker saber blade van darth maul */
 ol li:nth-of-type(2) article:nth-of-type(2) div:nth-of-type(2) {
   position: relative;
   background: var(--redsaberblade);
@@ -815,14 +918,16 @@ ol li:nth-of-type(2) article:nth-of-type(2) div:nth-of-type(2) {
   transform-origin: center right;
 }
 
+/* Verschijnen van de linker kant van de lightsaber van Darth Maul */
 ol li:nth-of-type(2) article:nth-of-type(2) div:nth-of-type(1).emittingdarthL {
   visibility: visible;
-  animation: bladesdarkside .05s infinite, growblades .2s;
+  animation: bladesdarkside 0.05s infinite, growblades 0.2s;
 }
 
+/* Verschijnen van de rechter kant van de lightsaber van Darth Maul */
 ol li:nth-of-type(2) article:nth-of-type(2) div:nth-of-type(2).emittingdarthR {
   visibility: visible;
-  animation: bladesdarkside .05s infinite, growblades .2s;
+  animation: bladesdarkside 0.05s infinite, growblades 0.2s;
 }
 
 ol li:nth-of-type(3) article {
@@ -834,7 +939,7 @@ ol li:nth-of-type(3) article {
   left: 12em;
 }
 
-/* MAIN FRAME DOOKU LIGHTSABER */
+/* Main frame voor Dooku's lightsaber */
 ol li:nth-of-type(3) article header {
   background: var(--dookukleur);
   height: 3em;
@@ -846,9 +951,25 @@ ol li:nth-of-type(3) article strong:first-of-type {
   background: var(--dookukleur);
   height: 3.87em;
   width: 2.5em;
-  clip-path: polygon(0% 0%, 11% 0%, 24% 1%, 37% 3%, 48% 6%, 61% 10%, 
-  77% 16%, 88% 22%, 100% 28%, 74% 60%, 69% 56%, 64% 54%, 55% 49%, 
-  45% 45%, 35% 42%, 25% 40%, 14% 39%, 0 39%);
+  clip-path: polygon(
+    0% 0%,
+    11% 0%,
+    24% 1%,
+    37% 3%,
+    48% 6%,
+    61% 10%,
+    77% 16%,
+    88% 22%,
+    100% 28%,
+    74% 60%,
+    69% 56%,
+    64% 54%,
+    55% 49%,
+    45% 45%,
+    35% 42%,
+    25% 40%,
+    14% 39%,
+    0 39%);
   transform: scale(2, 2);
   bottom: -2.35em;
   left: 1.2em;
@@ -863,9 +984,21 @@ ol li:nth-of-type(3) article strong:nth-of-type(2) {
   width: 8em;
   bottom: -3.2em;
   left: -20.4em;
-  clip-path: polygon(100% 0%, 57% 0, 49% 1%, 43% 4%,
-  36% 8%, 31% 13%, 19% 25%, 49% 44%, 56% 37%, 62% 33%, 
-  68% 32%, 78% 32%, 88% 32%, 100% 32%);
+  clip-path: polygon(
+    100% 0%,
+    57% 0,
+    49% 1%,
+    43% 4%,
+    36% 8%,
+    31% 13%,
+    19% 25%,
+    49% 44%,
+    56% 37%,
+    62% 33%,
+    68% 32%,
+    78% 32%,
+    88% 32%,
+    100% 32%);
 }
 
 /* Klein zwart stukje aan de linkerkant */
@@ -879,7 +1012,7 @@ ol li:nth-of-type(3) article div:first-of-type {
   transform: rotate(41deg);
 }
 
-/* bovenste handvat gedeelte */
+/* Bovenste handvat gedeelte */
 ol li:nth-of-type(3) article div:nth-of-type(2) {
   position: relative;
   background-color: #191818;
@@ -887,8 +1020,23 @@ ol li:nth-of-type(3) article div:nth-of-type(2) {
   width: 3em;
   left: -16em;
   bottom: -1.5em;
-  clip-path: polygon(1% 30%, 3% 31%, 12% 33%, 20% 35%, 28% 37%, 32% 38%, 
-  39% 40%, 44% 42%, 48% 40%, 49% 38%, 49% 36%, 49% 34%, 49% 32%, 48% 30%, 29% 30%, 10% 30%);
+  clip-path: polygon(
+    1% 30%,
+    3% 31%,
+    12% 33%,
+    20% 35%,
+    28% 37%,
+    32% 38%,
+    39% 40%,
+    44% 42%,
+    48% 40%,
+    49% 38%,
+    49% 36%,
+    49% 34%,
+    49% 32%,
+    48% 30%,
+    29% 30%,
+    10% 30%);
   transform: scale(6, 5);
 }
 
@@ -900,16 +1048,30 @@ ol li:nth-of-type(3) article div:nth-of-type(3) {
   width: 3em;
   left: -30em;
   bottom: 1.5em;
-  clip-path: polygon(1% 30%, 3% 31%, 12% 33%, 20% 35%, 28% 37%, 32% 38%, 
-  39% 40%, 44% 42%, 48% 40%, 49% 38%, 49% 36%, 49% 34%, 49% 32%, 48% 30%, 29% 30%, 10% 30%);
+  clip-path: polygon(
+    1% 30%,
+    3% 31%,
+    12% 33%,
+    20% 35%,
+    28% 37%,
+    32% 38%,
+    39% 40%,
+    44% 42%,
+    48% 40%,
+    49% 38%,
+    49% 36%,
+    49% 34%,
+    49% 32%,
+    48% 30%,
+    29% 30%,
+    10% 30%);
   transform: scale(-6, -5);
 }
 
-/* elips links */
+/* Elips links */
 ol li:nth-of-type(3) article div:nth-of-type(4) {
   position: relative;
-  background:rgb(42, 41, 41);
-  /* box-shadow: inset 0px 0px 10px 10px rgb(101, 100, 100); */
+  background: rgb(42, 41, 41);
   border-radius: 1em;
   height: 3.5em;
   width: 0.25em;
@@ -917,10 +1079,10 @@ ol li:nth-of-type(3) article div:nth-of-type(4) {
   bottom: 0em;
 }
 
-/* elips rechts */
+/* Elips rechts */
 ol li:nth-of-type(3) article div:nth-of-type(5) {
   position: relative;
-  background:rgb(42, 41, 41);
+  background: rgb(42, 41, 41);
   border-radius: 1em;
   height: 3.5em;
   width: 0.25em;
@@ -933,7 +1095,6 @@ ol li:nth-of-type(3) article div:nth-of-type(6) {
   position: relative;
   background: rgb(42, 41, 41);
   border-radius: 1em;
-  /* clip-path: polygon(0 0, 5% 0, 100% 100%, 95% 100%); */
   height: 12.5em;
   width: 0.15em;
   left: -26.5em;
@@ -941,7 +1102,7 @@ ol li:nth-of-type(3) article div:nth-of-type(6) {
   transform: rotate(-76.5deg);
 }
 
-/* lijn waar de blade uitkomt */
+/* Gedeelte waar de blade uitkomt */
 ol li:nth-of-type(3) article div:nth-of-type(7) {
   position: relative;
   background: rgb(42, 41, 41);
@@ -954,6 +1115,7 @@ ol li:nth-of-type(3) article div:nth-of-type(7) {
   z-index: 1;
 }
 
+/* Knop op de lightsaber */
 ol li:nth-of-type(3) article button {
   background-color: var(--buttonkleur);
 
@@ -983,7 +1145,7 @@ ol li:nth-of-type(3) article output {
 
 ol li:nth-of-type(3) article output.aan {
   visibility: visible;
-  animation: bladesdarkside .05s infinite, growblades .2s;
+  animation: bladesdarkside 0.05s infinite, growblades 0.2s;
 }
 /**********************************************/
 /* LIGHTSABER CODE: Inquisitor, 4e lightsaber */
@@ -1007,7 +1169,7 @@ ol li:nth-of-type(4) button:first-of-type {
 
 /* Linker button op saber */
 ol li:nth-of-type(4) button:nth-of-type(2) {
-  position: relative;   
+  position: relative;
   background: var(--buttonkleur);
   height: 2em;
   width: 2em;
@@ -1046,66 +1208,51 @@ ol li:nth-of-type(4) output:last-of-type {
 }
 
 ol li:nth-of-type(4) output:last-of-type.emittingR {
-  visibility:visible;
-  animation: bladesdarkside .05s infinite, growblades .2s;
+  visibility: visible;
+  animation: bladesdarkside 0.05s infinite, growblades 0.2s;
 }
 
 ol li:nth-of-type(4) output:first-of-type.emittingL {
-  visibility:visible;
-  animation: bladesdarkside .05s infinite, growblades .2s;
+  visibility: visible;
+  animation: bladesdarkside 0.05s infinite, growblades 0.2s;
 }
 
 @keyframes bladesdarkside {
-  0%    {box-shadow: none;}
-  50%   {box-shadow: 12px 0px 10px 20px #c50404;}
-  100%  {box-shadow: none;}
+  0% {box-shadow: none;}
+  50% {box-shadow: 12px 0px 10px 20px #c50404;}
+  100% {box-shadow: none;}
 }
 
 /********************/
 /* Millenium Falcon */
 /********************/
 
-/* button van de death star */
+/* button van de Falcon */
 ol li:nth-of-type(5) button {
   background: none;
 }
 
+/* Afbeelding van de Falcon */
 ol li:nth-of-type(5) img {
   animation-timing-function: linear;
   transform: translateX(-65em) rotate(-90deg);
+  background-color: none;
+  background: none;
 }
 
 ol li:nth-of-type(5) img.firing {
   animation-name: firingdeathstar, lightspeedflash;
   animation-duration: 6s;
   animation-timing-function: cubic-bezier(0.56, 0.01, 0.94, 0.01);
-}
-
-@keyframes firingdeathstar {
-  0%    {transform: translateX(-65em) rotate(-90deg);}
-  100%  {transform: translateX(70em) rotate(-100deg);}
+  /* animation-fill-mode: forwards; */
 }
 
 @keyframes lightspeedflash {
-  0%    {box-shadow: none;}
-  92%   {box-shadow: none;}
-  94%   {box-shadow: 0px -40px 30px 5px rgb(29, 175, 243);}
-  96%   {box-shadow: none;}
-  100%  {box-shadow: none;}
-}
-
-section:first-of-type > img:first-of-type {
-  filter: brightness(0.8);
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  height: 30em;
-  width: 100%;
-  z-index: -1;
-  
-  object-fit: cover;
-  object-position: top;
+  0% {filter: drop-shadow(none);}
+  90% {filter: drop-shadow(none);}
+  94% {filter: drop-shadow(0em -2em 1em rgb(29, 175, 243));}
+  96% {filter: drop-shadow(none);}
+  100% {filter: drop-shadow(none);}
 }
 
 /*****************************/
@@ -1135,8 +1282,8 @@ ol li:nth-of-type(6) button {
 ol li:nth-of-type(6) output:first-of-type {
   background: var(--redsaberblade);
 
-  left: 26em;  
-  width: 30em;  
+  left: 26em;
+  width: 30em;
   height: 1.5em;
   bottom: 5.2em;
   position: relative;
@@ -1146,7 +1293,6 @@ ol li:nth-of-type(6) output:first-of-type {
 
   visibility: hidden;
   transform-origin: center left;
-  
 }
 
 /* Korte saber gedeelte onder */
@@ -1155,59 +1301,53 @@ ol li:nth-of-type(6) output:nth-of-type(2) {
 
   position: relative;
   bottom: 3em;
-  left: 17.15em;
-  width: 15em;
+  left: 14.55em;
+  width: 10em;
   height: 1.5em;
-  
   transform: rotate(90deg) scaleX(0) scaleY(0);
 
   border: none;
   border-radius: 0em 1em 1em 0em;
-
   transform-origin: left center;
   transition-delay: 1s;
-  transition: .1s;
+  transition: 0.1s;
 }
 
 /* Korte saber gedeelte boven */
 ol li:nth-of-type(6) output:nth-of-type(3) {
   background: var(--redsaberblade);
-
   position: relative;
   top: -12em;
-  left: 17.15em;
-  width: 15em;
+  left: 14.55em;
+  width: 10em;
   height: 1.5em;
-  
   transform: rotate(-90deg) scaleX(0) scaleY(0);
- 
-
   border: none;
   border-radius: 0em 1em 1em 0em;
-
   transform-origin: left center;
   transition-delay: 1s;
-  transition: .1s;
+  transition: 0.1s;
 }
 
 ol li:nth-of-type(6) output:first-of-type.activate {
   visibility: visible;
-  animation: bladesdarkside .05s infinite, growblades .2s;
+  animation: bladesdarkside 0.05s infinite, growblades 0.2s;
 }
 
+/* onder */
 ol li:nth-of-type(6) output:nth-of-type(2).activate {
-  animation: bladesdarkside .05s infinite;
+  animation: bladesdarkside 0.05s infinite;
   transform: rotate(90deg) scaleX(1) scaleY(1);
 }
 
 /* boven */
 ol li:nth-of-type(6) output:nth-of-type(3).activate {
-  animation: bladesdarkside .05s infinite;
+  animation: bladesdarkside 0.05s infinite;
   transform: rotate(-90deg) scaleX(1) scaleY(1);
 }
 
 @keyframes kylorenrotate {
-  0% {transform: rotate(0deg)}
+  0% {transform: rotate(0deg);}
   100% {transform: rotate(90deg);}
 }
 
@@ -1215,38 +1355,85 @@ ol li:nth-of-type(6) output:nth-of-type(3).activate {
 /* animatie hello there */
 /***********************/
 
-/* ol li:last-of-type {
+ol li:last-of-type {
+  padding: 0 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+ol li:last-of-type article {
+  display: flex;
   flex-direction: row;
-  padding: 0;
-} */
+  justify-content: center;
+  align-items: center;
+}
 
-
+/* HELLO THERE BUTTON */
 ol li:last-of-type button {
   position: relative;
+  left: 0em;
+  bottom: -15em;
+  z-index: 1;
   font-family: aurebesh;
   border: 0.25em solid var(--buttonkleur);
 }
 
-ol li:last-of-type img:first-of-type {
+/* GRIEVOUS IMG */
+ol li:last-of-type article img:first-of-type {
   position: relative;
-  transform: scale(0.7);
-  bottom: 3em;
+  transform: scale(1);
+  width: 25em;
+  bottom: 0em;
+  right: 90em;
+  display: none;
 }
 
-ol li:last-of-type img:last-of-type {
+/* KENOBI IMG */
+ol li:last-of-type article img:last-of-type {
   position: relative;
-  transform: scale(0.25);
-  transform
-  bottom: 50em;
+  bottom: 0em;
+  left: 55em;
+  transform: scale(1);
+  display: none;
 }
 
+ol li:last-of-type article img:first-of-type.hello {
+  display: block;
+  animation-name: grievous;
+  animation-duration: 2s;
+  animation-delay: 7s;
+  animation-fill-mode: forwards;
+}
 
+ol li:last-of-type article img:last-of-type.hello {
+  display: block;
+  animation-name: kenobi;
+  animation-duration: 2s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+}
 
+ol li:last-of-type button.hello {
+  display: none;
+}
+@keyframes grievous {
+  0%   {transform: translateX(0em);}
+  100% {transform: translateX(75em);}
+}
 
+@keyframes kenobi {
+  0%    {transform: translateX(0em);}
+  100%  {transform: translateX(-50em);}
+}
 
-
-
-
+/* Mislukte poging om Kenobi te laten bewegen als hij 'hello there' zegt */
+/* @keyframes kenobishake {
+  0%      {transform: rotate(0deg);}
+  25%     {transform: rotate(10deg);}
+  50%     {transform: rotate(-10deg);}
+  75%     {transform: rotate(10deg);}
+  100%    {transform: rotate(0deg);}
+} */
 
 /***********************/
 /* Footer instellingen */

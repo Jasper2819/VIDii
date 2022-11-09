@@ -181,4 +181,6 @@ Voor de achtergrond sterren ben ik naar https://transparenttextures.com/patterns
 
 9. De afbeeldingen voor de animaties van General Kenobi en General Grievous heb ik van de volgende site. https://www.deviantart.com/darthspidermaul/art/Obi-Wan-Kenobi-PNG-833204088.
 
+10. Geluiden voor verschillende effecten op buttons etc. heb ik van star wars soundboards op het internet. https://www.myinstants.com/en/search/?name=star%20wars is een zeer uitgebriede soundboard met veel verschillende muziekjes en gesproken teksten. Hier komen mijn effecten vandaan.
+
 </details>

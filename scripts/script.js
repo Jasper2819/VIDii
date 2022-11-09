@@ -17,14 +17,6 @@ var saberinqL = document.querySelector("ol li:nth-of-type(4) output:first-of-typ
 var body = document.querySelector("body");
 var knopplaneet1 = document.querySelector("section article ul button:nth-of-type(1)");
 
-var audioanakin = new Audio("sounds/lightsaber_02.mp3");
-var audiodarkside = new Audio("sounds/SaberOn.mp3");
-var audiohappybeeps = new Audio("sounds/HappyThreeChirp.mp3");
-var audiodeathstar = new Audio("sounds/superlaser.mp3");
-var audiohyperspace = new Audio("sounds/jumptolightspeed.mp3");
-var audiokylorensaber = new Audio("sounds/kylo_ren_lightsaber_trimmed.mp3");
-var audiogoodjob = new Audio("sounds/good-job-trimmed.mp3");
-
 var body = document.querySelector("body");
 var knopplaneet1 = document.querySelector("section article ul button:nth-of-type(1)");
 
@@ -44,8 +36,18 @@ var nav = document.querySelector("nav ul");
 var hamburgerButton = document.querySelector("nav button:first-of-type");
 var closebutton = document.querySelector("nav li:first-of-type");
 
-
-
+var audioutini = new Audio("sounds/utini.mp3");
+var audiobd1 = new Audio("sounds/bd1woohoo.mp3");
+var audiodarkside = new Audio("sounds/darksaberon_trimmed.mp3");
+var audiodeathstar = new Audio("sounds/superlaser.mp3");
+var audioewokhorns = new Audio("sounds/ewok-horns.mp3");
+var audioyodalaugh = new Audio("sounds/yodalaugh.mp3");
+var audioanakin = new Audio("sounds/lightsaber_02.mp3");
+var audiogoodjob = new Audio("sounds/good-job-trimmed.mp3");
+var audiohappybeeps = new Audio("sounds/HappyThreeChirp.mp3");
+var audiohyperspace = new Audio("sounds/jumptolightspeed.mp3");
+var audiokylorensaber = new Audio("sounds/kylo_ren_lightsaber_trimmed.mp3");
+var audiohellothere = new Audio("sounds/obiwanhellothere.mp3");
 
 buttondarthL.addEventListener("click", function() {
     saberdarthL.classList.toggle("emittingdarthL");
@@ -78,27 +80,27 @@ var headerBackground = document.querySelector("section:first-of-type > img:first
 function veranderendor () {
     headerBackground.src="../images/endor4k.png"
     console.log('endor is nu te zien, ook dankzij jeff ;)');
+    audioewokhorns.play();
 }
 
 // Tatooine laten verschijnen
 function veranderwoestijn () {
     headerBackground.src="../images/tatooinedesert.jpg"
     console.log('tatooine moet te zien zijn. En ja: made by jeff');
+    audioutini.play();
 }
 
 // Felucia laten verschijnen
 function veranderfelucia () {
     headerBackground.src=("../images/felucia4k.jpg");
-    // var tropisch = document.querySelector("body");
-    // tropisch.classList.toggle("Felucia");
+    audiobd1.play();
     console.log('felucia moet te zien zijn');
 }
 
 //Endor laten verschijnen
 function verandernaboo () {
     headerBackground.src=("../images/naboo4k.jpg");
-    // var tropisch = document.querySelector("body");
-    // tropisch.classList.toggle("Felucia");
+    audioyodalaugh.play();
     console.log('naboo moet te zien zijn');
 }
 
@@ -139,4 +141,14 @@ var bladedooku = document.querySelector("ol li:nth-of-type(3) article output");
 buttondooku.addEventListener("click", function() {
     bladedooku.classList.toggle("aan");
     audiodarkside.play();
+})
+
+var buttonhellothere = document.querySelector("ol li:last-of-type button");
+var imggrievous = document.querySelector("ol li:last-of-type article img:first-of-type");
+var imgkenobi = document.querySelector("ol li:last-of-type article img:last-of-type");
+
+buttonhellothere.addEventListener("click", function() {
+    imggrievous.classList.toggle("hello");
+    imgkenobi.classList.toggle("hello");
+    audiohellothere.play();
 })
