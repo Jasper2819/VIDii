@@ -192,12 +192,12 @@ nav ul {
   visibility: hidden;
 }
 
-nav ul.open {
+nav ul.burger {
   visibility: visible;
   animation: hamburger 0.1s linear;
 }
 
-nav ul.open li img {
+nav ul.burger li img {
   display: flex;
   left: -9em;
   bottom: 1.5em;
@@ -1441,13 +1441,14 @@ ol li:nth-of-type(6) output:nth-of-type(3).activate {
 /* Animatie hello there */
 /************************/
 
-ol li:last-of-type {
+ol li:nth-of-type(7) {
   padding: 0 10px;
   display: inline-block;
   vertical-align: top;
+  margin: 5em;
 }
 
-ol li:last-of-type article {
+ol li:nth-of-type(7) article {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1455,7 +1456,7 @@ ol li:last-of-type article {
 }
 
 /* HELLO THERE button */
-ol li:last-of-type button {
+ol li:nth-of-type(7) button {
   position: relative;
   left: 0em;
   bottom: -15em;
@@ -1465,7 +1466,7 @@ ol li:last-of-type button {
 }
 
 /* Grievous IMG */
-ol li:last-of-type article img:first-of-type {
+ol li:nth-of-type(7) article img:first-of-type {
   position: relative;
   transform: scale(1);
   width: 25em;
@@ -1475,7 +1476,7 @@ ol li:last-of-type article img:first-of-type {
 }
 
 /* Kenobi IMG */
-ol li:last-of-type article img:last-of-type {
+ol li:nth-of-type(7) article img:last-of-type {
   position: relative;
   bottom: 0em;
   left: 55em;
@@ -1484,7 +1485,7 @@ ol li:last-of-type article img:last-of-type {
 }
 
 /* Afbeelding van Grievous verschijnt met een delay */
-ol li:last-of-type article img:first-of-type.hello {
+ol li:nth-of-type(7) article img:first-of-type.hello {
   display: block;
   animation-name: grievous;
   animation-duration: 2s;
@@ -1493,7 +1494,7 @@ ol li:last-of-type article img:first-of-type.hello {
 }
 
 /* Afbeelding van Kenobi verschijnt met een delay */
-ol li:last-of-type article img:last-of-type.hello {
+ol li:nth-of-type(7) article img:last-of-type.hello {
   display: block;
   animation-name: kenobi;
   animation-duration: 2s;
@@ -1510,6 +1511,74 @@ ol li:last-of-type article img:last-of-type.hello {
   0%    {transform: translateX(0em);}
   100%  {transform: translateX(-50em);}
 }
+
+
+/*******************/
+/* LEGO lightsaber */
+/*******************/
+
+ol li:last-of-type {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Lego hilt */
+ol li:last-of-type img {
+  position: absolute;
+  transform: scale(0.5);
+  z-index: 1;
+}
+
+/* Lego blade */
+ol li:last-of-type strong {
+  position: relative;
+  background: var(--bluesaberblade);
+  height: 4em;
+  width: 40em;
+  left: 33em;
+  border-radius: 0em 0.5em 0.5em 0em;
+  visibility: hidden;
+  transform-origin: left;
+}
+
+ol li:last-of-type button {
+  position: relative;
+  background: var(--buttonkleur);
+  height: 2em;
+  width: 2em;
+  left: -17em;
+  border: none;
+  border-radius: 1em;
+  z-index: 1;
+}
+
+ol li:last-of-type strong.bouwen {
+  visibility: visible;
+  animation: bladeslightside 0.05s infinite, growblades 0.2s;
+}
+
+
+@keyframes build {
+  0%    {width: 0em;}
+  16%   {width: 6.67em;}
+  32% 	{width: 13.34em;}
+  48%   {width: 20em;}
+  64%   {width: 26.7em;}
+  80%   {width: 33.3em;}
+  100%  {width: 40em;}
+}
+
+/* @keyframes build {
+  0%    {transform: translateX(0em);}
+  16%   {transform: translateX(6.67em);}
+  32% 	{transform: translateX(13.34em);}
+  48%   {transform: translateX(20em);}
+  64%   {transform: translateX(26.7em);}
+  80%   {transform: translateX(33.3em);}
+  100%  {transform: translateX(40em);}
+} */
+
 
 /***********************/
 /* Footer instellingen */

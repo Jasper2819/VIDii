@@ -48,7 +48,7 @@ var audiohappybeeps = new Audio("sounds/HappyThreeChirp.mp3");
 var audiohyperspace = new Audio("sounds/jumptolightspeed.mp3");
 var audiokylorensaber = new Audio("sounds/kylo_ren_lightsaber_trimmed.mp3");
 var audiohellothere = new Audio("sounds/obiwanhellothere.mp3");
-
+var audiolegobuild = new Audio("sounds/legobreaking.mp3");
 
 // Anakin's lightsaber en tekst
 var anakintekst = document.querySelector("ol li:first-of-type p");
@@ -176,15 +176,26 @@ function verandernaboo () {
     console.log('naboo moet te zien zijn, thanks Jeffrey!');
 }
 
+// Hamburger menu codes
 hamburgerButton.addEventListener("click", function() {
-    nav.classList.toggle("open");
+    nav.classList.toggle("burger");
     audiohappybeeps.play();
 })
 
 closebutton.addEventListener("click", function() {
-    nav.classList.toggle("open");
+    nav.classList.toggle("burger");
     audiogoodjob.play();
 })
+
+var navbutton = document.querySelector("header ul li:nth-of-type(2) button");
+var yodadood = new Audio("sounds/yodadeathsound.mp3");
+
+navbutton.addEventListener("click", function() {
+    yodadood.play();
+})
+
+
+
 
 var imagedeathstar = document.querySelector("ol li:nth-of-type(5) img");
 var deathstar =  document.querySelector("ol li:nth-of-type(5) button");
@@ -193,12 +204,22 @@ deathstar.addEventListener("click", function() {
     audiohyperspace.play();
 })
 
-var buttonhellothere = document.querySelector("ol li:last-of-type button");
-var imggrievous = document.querySelector("ol li:last-of-type article img:first-of-type");
-var imgkenobi = document.querySelector("ol li:last-of-type article img:last-of-type");
+var buttonhellothere = document.querySelector("ol li:nth-of-type(7) button");
+var imggrievous = document.querySelector("ol li:nth-of-type(7) article img:first-of-type");
+var imgkenobi = document.querySelector("ol li:nth-of-type(7) article img:last-of-type");
 
 buttonhellothere.addEventListener("click", function() {
     imggrievous.classList.toggle("hello");
     imgkenobi.classList.toggle("hello");
     audiohellothere.play();
+})
+
+var legobutton = document.querySelector("ol li:last-of-type button");
+var legoblade = document.querySelector("ol li:last-of-type strong");
+
+legobutton.addEventListener("click", function() {
+    legoblade.classList.toggle("bouwen");
+    audiolegobuild.play();
+
+    console.log('bouwen bouwen bouwen');
 })
