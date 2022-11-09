@@ -20,16 +20,16 @@ var knopplaneet1 = document.querySelector("section article ul button:nth-of-type
 var body = document.querySelector("body");
 var knopplaneet1 = document.querySelector("section article ul button:nth-of-type(1)");
 
-var buttonplaneetendor = document.querySelector("section article ul button:first-of-type");
+var buttonplaneetendor = document.querySelector("section article ul li:first-of-type button");
 buttonplaneetendor.addEventListener("click", veranderendor);
 
-var buttonplaneet2 = document.querySelector("section article ul button:nth-of-type(2)");
+var buttonplaneet2 = document.querySelector("section article ul li:nth-of-type(2) button");
 buttonplaneet2.addEventListener("click", veranderwoestijn);
 
-var buttonplaneet3 = document.querySelector("section article ul button:nth-of-type(3)");
+var buttonplaneet3 = document.querySelector("section article ul li:nth-of-type(3) button");
 buttonplaneet3.addEventListener("click", veranderfelucia);
 
-var buttonplaneetnaboo = document.querySelector("section article ul button:last-of-type img");
+var buttonplaneetnaboo = document.querySelector("section article ul li:nth-of-type(4) button img");
 buttonplaneetnaboo.addEventListener("click", verandernaboo);
 
 var nav = document.querySelector("nav ul");
@@ -69,17 +69,29 @@ buttoninquisitorL.addEventListener("click", function() {
     audiodarkside.play();
 })
 
+// Anakin's lightsaber en tekst
+var anakintekst = document.querySelector("ol li:first-of-type p");
+
 buttonSaber.addEventListener("click", function() {
     saber.classList.toggle("open");
+    anakintekst.classList.toggle("open");
     audioanakin.play();
 })
 
+var h2 = document.querySelector("section article h2:first-of-type");
 
 var headerBackground = document.querySelector("section:first-of-type > img:first-of-type");
 //Endor laten verschijnen
 function veranderendor () {
     headerBackground.src="../images/endor4k.png"
+    headerBackground.classList.add('veranderendor')
     console.log('endor is nu te zien, ook dankzij jeff ;)');
+
+    if (headerBackground.classList.contains != "veranderendor") {
+            h2.innerHTML = "Planeet Endor";
+            headerBackground.className = '';
+            headerBackground.classList.add('veranderendor')
+        }
     audioewokhorns.play();
 }
 
@@ -87,21 +99,39 @@ function veranderendor () {
 function veranderwoestijn () {
     headerBackground.src="../images/tatooinedesert.jpg"
     console.log('tatooine moet te zien zijn. En ja: made by jeff');
+
+    if(headerBackground.classList.contains != 'veranderwoestijn'){  //!= is niet gelijk aan
+        h2.innerHTML = "Planeet Tatooine";
+        headerBackground.className = '';
+        headerBackground.classList.add('veranderwoestijn')
+    }
     audioutini.play();
 }
 
 // Felucia laten verschijnen
 function veranderfelucia () {
     headerBackground.src=("../images/felucia4k.jpg");
+
+    if(headerBackground.classList.contains != 'veranderfelucia'){  //!= is niet gelijk aan
+        h2.innerHTML = "Planeet Felucia";
+        headerBackground.className = '';
+        headerBackground.classList.add('veranderfelucia')
+    }
     audiobd1.play();
-    console.log('felucia moet te zien zijn');
+    console.log('felucia moet te zien zijn, thanks Jeffrey!');
 }
 
 //Endor laten verschijnen
 function verandernaboo () {
     headerBackground.src=("../images/naboo4k.jpg");
+
+    if(headerBackground.classList.contains != 'verandernaboo'){  //!= is niet gelijk aan
+        h2.innerHTML = "Planeet Naboo";
+        headerBackground.className = '';
+        headerBackground.classList.add('verandernaboo')
+    }
     audioyodalaugh.play();
-    console.log('naboo moet te zien zijn');
+    console.log('naboo moet te zien zijn, thanks Jeffrey!');
 }
 
 hamburgerButton.addEventListener("click", function() {
@@ -116,7 +146,7 @@ closebutton.addEventListener("click", function() {
 
 var imagedeathstar = document.querySelector("ol li:nth-of-type(5) img");
 var deathstar =  document.querySelector("ol li:nth-of-type(5) button");
-deathstar.addEventListener("click", function(){
+deathstar.addEventListener("click", function() {
     imagedeathstar.classList.toggle("firing");
     audiohyperspace.play();
 })
