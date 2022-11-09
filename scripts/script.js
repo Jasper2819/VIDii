@@ -49,25 +49,6 @@ var audiohyperspace = new Audio("sounds/jumptolightspeed.mp3");
 var audiokylorensaber = new Audio("sounds/kylo_ren_lightsaber_trimmed.mp3");
 var audiohellothere = new Audio("sounds/obiwanhellothere.mp3");
 
-buttondarthL.addEventListener("click", function() {
-    saberdarthL.classList.toggle("emittingdarthL");
-    audiodarkside.play();
-})
-
-buttondarthR.addEventListener("click", function() {
-    saberdarthR.classList.toggle("emittingdarthR");
-    audiodarkside.play();
-})
-
-buttoninquisitorR.addEventListener("click", function() {
-    saberinqR.classList.toggle("emittingR");
-    audiodarkside.play();
-})
-
-buttoninquisitorL.addEventListener("click", function() {
-    saberinqL.classList.toggle("emittingL");
-    audiodarkside.play();
-})
 
 // Anakin's lightsaber en tekst
 var anakintekst = document.querySelector("ol li:first-of-type p");
@@ -76,6 +57,67 @@ buttonSaber.addEventListener("click", function() {
     saber.classList.toggle("open");
     anakintekst.classList.toggle("open");
     audioanakin.play();
+})
+
+// Darth Maul's lightsaber en tekst
+var maultekst = document.querySelector("ol li:nth-of-type(2) p");
+
+buttondarthL.addEventListener("click", function() {
+    saberdarthL.classList.toggle("emittingdarthL");
+    maultekst.classList.toggle("emittingdarthL");
+    audiodarkside.play();
+    console.log('darth maul links');
+})
+
+buttondarthR.addEventListener("click", function() {
+    saberdarthR.classList.toggle("emittingdarthR");
+    
+    audiodarkside.play();
+    console.log('darth maul links');
+})
+
+// Dooku's lightsaber
+var buttondooku = document.querySelector("ol li:nth-of-type(3) article button");
+var bladedooku = document.querySelector("ol li:nth-of-type(3) article output");
+var dookutekst = document.querySelector("ol li:nth-of-type(3) p");
+
+buttondooku.addEventListener("click", function() {
+    bladedooku.classList.toggle("aan");
+    dookutekst.classList.toggle("aan");
+    audiodarkside.play();
+})
+
+
+// Inquisitor lightsaber en tekst
+var inqtekst = document.querySelector("ol li:nth-of-type(4) p");
+
+buttoninquisitorR.addEventListener("click", function() {
+    saberinqR.classList.toggle("emittingR");
+    inqtekst.classList.toggle("emittingR");
+    audiodarkside.play();
+})
+
+buttoninquisitorL.addEventListener("click", function() {
+    saberinqL.classList.toggle("emittingL");
+    audiodarkside.play();
+})
+
+var buttonkyloren = document.querySelector("ol li:nth-of-type(6) button");
+var bladelangkylo = document.querySelector("ol li:nth-of-type(6) output:first-of-type");
+var bladekortonderkylo = document.querySelector("ol li:nth-of-type(6) output:nth-of-type(2)");
+var bladekortbovenkylo = document.querySelector("ol li:nth-of-type(6) output:nth-of-type(3)");
+var kylotekst = document.querySelector("ol li:nth-of-type(6) p");
+
+buttonkyloren.addEventListener("click", function() {
+    bladelangkylo.classList.toggle("activate");
+    bladekortonderkylo.classList.toggle("activate");
+    bladekortbovenkylo.classList.toggle("activate");
+
+    kylotekst.classList.toggle("activate");
+
+    audiokylorensaber.play();
+
+    console.log('lighstaber kylo ren aan');
 })
 
 var h2 = document.querySelector("section article h2:first-of-type");
@@ -149,28 +191,6 @@ var deathstar =  document.querySelector("ol li:nth-of-type(5) button");
 deathstar.addEventListener("click", function() {
     imagedeathstar.classList.toggle("firing");
     audiohyperspace.play();
-})
-
-var buttonkyloren = document.querySelector("ol li:nth-of-type(6) button");
-var bladelangkylo = document.querySelector("ol li:nth-of-type(6) output:first-of-type");
-var bladekortonderkylo = document.querySelector("ol li:nth-of-type(6) output:nth-of-type(2)");
-var bladekortbovenkylo = document.querySelector("ol li:nth-of-type(6) output:nth-of-type(3)");
-
-buttonkyloren.addEventListener("click", function() {
-    bladelangkylo.classList.toggle("activate");
-    bladekortonderkylo.classList.toggle("activate");
-    bladekortbovenkylo.classList.toggle("activate");
-    audiokylorensaber.play();
-
-    console.log('lighstaber kylo ren aan');
-})
-
-var buttondooku = document.querySelector("ol li:nth-of-type(3) article button");
-var bladedooku = document.querySelector("ol li:nth-of-type(3) article output");
-
-buttondooku.addEventListener("click", function() {
-    bladedooku.classList.toggle("aan");
-    audiodarkside.play();
 })
 
 var buttonhellothere = document.querySelector("ol li:last-of-type button");
