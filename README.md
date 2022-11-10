@@ -32,6 +32,20 @@ Afbeelding van een eerste schets voor mijn website
 - Ik vind het belangrijk om een beter inzicht te krijgen in hoe de verschillende CSS elementen gebruikt kunnen worden om tot een gewenst resultaat te komen.
 - Ik wil mijn kennis over het gebruik van code verbeteren om dit later te kunnen toepassen op eigen projecten.
 
+</details open>
+
+<details>
+## Onderzoek vooraf
+
+Om de website te maken moet ik wel het een en ander over lightsabers te weten komen. Gelukkig ben ik een grote Star Wars fan, dus dat zit al goed. Als eerste is het belangrijk om te zeggen dat lightsaber niet een "evolutie" of een "tijdlijn" kennen. Ze zijn niet persee beter geworden over de jaren heen. Daarnaast spreken we altijd van _A long time ago in a galaxy far far away..._  dus hebben we het ook over een ficiteve tijd. Ik heb er daarom voor gekozen om een "tijdlijn" aan te houden hoe de lightsabers voor komen in de films of series op chronologische volgorde (beginned bij Episode I: A Phantom Menace naar Episode IX: The RIse of Skywalker).
+
+De eerste lightsaber die ik heb gekozen is die van Anakin. In de Star Wars universe is hij een zeer belangrijk personage en mag zeker niet ontbreken. Eigenlijk gaan de films vooral om hem en zijn familie. Zijn lightsaber heeft hij zelf gemaakt en is al door verschillende personages gebruikt. Hij is een keer wkijtgeraakt, gevonden, gebroken en weer gerepareerd. Vele mensen hebben hun leven verloren aan deze lightsaber.
+
+Waaruit bestaat een lightsaber eigenlijk? Zie de afbeelding hieronder, en in het kort: Binnenin de lightsaber zit een _Kyber Crystal_. Dit is het hart van de saber wat zorgt voor de kracht van het zwaard. De _Kyber Crystal_ zelf heeft een diepe connectie met de eigenaar van de lightsaber door de _Force_. Wordt een _Kyber Crystal_ vernietig of beschadigd, dan kan dat enorme explosieve krachten opleveren. Maar waar komen al die verschillende kleuren van lightsabers vandaan? Dat heeft te maken met de emotionele band tussen de dragen en de _Crystal_. Zo is er groen en blauw, maar ook paars en geel. De Sith gebruikten lightsabers met een lightsaberkristal dat zij hadden misvormd van kleur. Hierdoor ging de _Kyber Crystal_ bloeden en werd de blade rood.
+
+<img src="readme-images/lightsaberconstruction.png" width="375px" alt="Een exploded-view van de onderdelen van een lightsaber">
+
+
 </details>
 
 ## Voortgang/Feedback 1
