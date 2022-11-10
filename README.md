@@ -25,12 +25,6 @@ Afbeelding van een eerste schets voor mijn website
 
 <img src="readme-images/lightsaberschets2.png" width="375px" alt="Afbeelding van een tweede schets van een lightsaber">
 
-
-
-![Schets van een tweede lightsaber](../../../../D:/documenten/GitHub/VIDii/readme-images/lighstaberschets2.png "Schets van een tweede lightsaber")
-
-![Afbeelding van een schets voor een LEGO lightsaber](../../../../D:/documenten/GitHub/VIDii/readme-images/legosaberschets3.png "Afbeelding van een schets voor een LEGO lightsaber")
-
 ### Je ambitie:
 
 - Ik wil werken aan het beter begrijpen en gebruiken van HTML en CSS
