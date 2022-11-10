@@ -135,7 +135,7 @@ Ik heb vertrouwen in mijn website. Ik heb tot nu toe een goeie basis, iets waar 
  Er waren ook enkele aanpassingen nodig om de afbeeldingen zichtbaar te maken op github. Deze werkte namelijk niet. Stela heeft mij uitgelegt hoe het zit met een `src = ""`aanwijzen in HTML. Dit heb ik aangepast en de afbeeldingen zijn nu zichtbaar als iemand op de link klikt op github.
 
  Zie de afbeelding hieronder voor de feedback die ik van Stela kreeg.
- ![Afbeelding van een papier met erop feedback gekregen van Stela](../../../../D:/documenten/GitHub/VIDii/readme-images/feedback_moment_3.jpg "Afbeelding van een papier met erop feedback gekregen van Stela")
+  <img src="readme-images/feedback_moment_3.jpg" width="375px" alt="Afbeelding van een papier met erop feedback gekregen van Stela">
 
 </details>
 
