@@ -11,13 +11,13 @@ Jasper Riepe
 Blauw
 
 # Mijn progressie
-
+Afbeelding van een eerste schets voor mijn website
 <details open>
   <summary>De eerste versie/schets van je ontwerp & je persoonlijke uitdaging</summary>
 
 ## Een paar van de schetsen gemaakt tijdens de afgelopen 2 weken:
 
-![Afbeelding van een eerste schets voor mijn website](../../../../D:/documenten/GitHub/VIDii/readme-images/afbeelding_eersteschets_1.png "Afbeelding van een eerste schets voor mijn website")
+<img src="readme-images/afbeelding_eersteschets_1.png" width="375px" alt="Afbeelding van een eerste schets voor mijn website">
 
 ![Afbeelding van mijn eerste schetsen](../../../../D:/documenten/GitHub/VIDii/readme-images/afbeelding_eersteschets2.png "Afbeelding van mijn eerste schetsen voor mijn website")
 
@@ -170,7 +170,7 @@ De afgelopen twee weken heb ik ontzettend veel geleerd:
 
 Korte omschrijving met plaatje(s)
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  
 </details>
 
 ## Bronnenlijst
