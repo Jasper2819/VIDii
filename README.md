@@ -148,9 +148,9 @@ Ik heb vertrouwen in mijn website. Ik heb tot nu toe een goeie basis, iets waar 
 
 Om te beginnen ben ik zeer tevreden met mijn resultaat. Toen ik aan dit vak begon had ik enorme stress, omdat ik niet wist of ik wel zelf een website kon maken. Ik had weinig tot geen kennis over HTML, CSS en JAVA en maakte me zorgen dat ik dit vak niet zou gaan halen. Gelukkig merkte ik dat ik enorm snel leerde. De lesstof en kennis kreeg ik van iedereen als ik ernaar vroeg en gelukkig is er op het internet super veel te vinden over van alles. Zo heb ik de eerste week met een goed gevoel afgerond. Uiteraard bleven er punten waarop ik mij irriteerde. Iets wilde niet werken of ik begreep echt niet hoe iets moest. Maar als ik het dan vroeg, werd het mij duidelijk gemaakt en kon ik weer door. Ook schreef ik veel informatie op in een notitie boekje, zodat ik er altijd op terug kon komen. Zie hieronder afbeeldingen van hoe mijn eindresultaat eruitziet:
 
-![Afbeelding van mijn website eindresultaat](../../../../D:/documenten/GitHub/VIDii/readme-images/websiteafbeeldingheader.png)
+<img src="readme-images/websiteafbeeldingheader.png" width="375px" alt="Afbeelding van een eerste schets voor mijn website">
 
-![Afbeelding van mijn website eindresultaat](../../../../D:/documenten/GitHub/VIDii/readme-images/websiteafbeeldingfooter.png)
+<img src="readme-images/websiteafbeeldingfooter.png" width="375px" alt="Afbeelding van een eerste schets voor mijn website">
 
 ### Dit ging goed/heb ik geleerd:
 
@@ -162,13 +162,19 @@ De afgelopen twee weken heb ik ontzettend veel geleerd:
 - Het semantisch maken van je code is van hoog belang. Er zijn enkele regeltjes die ervoor zorgen dat alles er georden en netjes uitziet. Niet alleen handig voor jezelf, maar ook voor andere personen die graag in je code willen kijken voor inspiratie of andere redenen.
 - Met `display: grid;` en `display: flex` zorg je ervoor dat je website de juiste structuur krijgt. Alles netjes onder elkaar centreren, marges tussen de list items en meer. Zo zorg je voor consistentie in je website.
 
-![Afbeelding van een stukje html uit de website code](../../../../D:/documenten/GitHub/VIDii/readme-images/nettehtml.png "Nette HTML zorgt ervoor dat je website overzichtleijk blijft en dat de code goed te lezen is voor andere programmeurs")
+<img src="readme-images/nettehtml.png" width="375px" alt="Nette HTML zorgt ervoor dat je website overzichtleijk blijft en dat de code goed te lezen is voor andere programmeur">
 
 ### Dit was lastig/Is niet gelukt:
 
-Korte omschrijving met plaatje(s)
+Uiteraard zijn er momenten geweest dat ik het lastig had. Zo was het zeker de eerste week. Ik moets contstant vragen stellen en onderzoek doen op het internet om uit te zoeken hoe ik moest doen wat ik wilde doen. Daarnaast kwam er bij dat ik niet, zoals de CMD studenten, weet wat wel en niet mag/kan met coderen. Ik merkte dat ik na verloop van tijd meer kennis kreeg, en hierdoor in de gaten kreeg wat er allemaal mogelijk was om toe doen met mij website. Er waren veel ideeën die ik graag wilde uitvoeren, maar door de gelimiteerde kennis die ik heb kon ik die niet uitvoeren. Ik weet zeker dat als we een extra week hadden gehad voor deze opdracht, ik nog meer leuke dingen had kunnen toevoegen aan de website.
 
-  
+Paar voorbeelden zijn:
+
+- Het maken van een werkende knop dat als je erop klikt alle lightsabers aan of uit gaan.
+- Meer easter eggs en andere grapjes toevoegen op de website. Zoals een animatie met geluid of rondvliegende elementen.
+- Graag had ik meer lightsabers toegevoegd, de collectie groter gemaakt.
+- De animatie van de lightsaber van Dooku had ik nog graag goed willen maken. Deze verloopt nu niet geheel zoals ik wil en had beter gekund.
+
 </details>
 
 ## Bronnenlijst
