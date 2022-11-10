@@ -18,31 +18,32 @@
 /*********************/
 
 :root {
+  --puurwit: white;
+  --puurzwart: black;
+  --dookukleur: #828582;
+  --darthmaulkleur: #98948b;
+  --Kleur-headings-2: White;
+  --Kleur-basis-tekst: white;
+  --starwars-font: "starwars";
+  --handvattendooku: #191818;
+  --buttonkleur: rgb(177, 5, 5);
+  --dookugrijs: rgb(42, 41, 41);
+  --anakingold: rgb(153, 153, 0);
   --color-headings: rgb(216, 216, 2);
+  --verminderdezwart: rgb(24, 23, 23);
+  --emitterkleurgrijs: rgb(136, 134, 134);
   --bluesaberblade: linear-gradient(
     to bottom,
     #2989d8 15%,
     #ffffff 52%,
     #2989d8 89%);
-    
+
   --redsaberblade: linear-gradient(
     to bottom,
     #c70505 15%,
     #ffffff 52%,
     #c70505 89%);
-  --Kleur-headings-2: White;
-  --Kleur-basis-tekst: white;
-  --starwars-font: "starwars";
-  --darthmaulkleur: #98948b;
-  --dookukleur: #828582;
-  --buttonkleur: rgb(177, 5, 5);
-  --puurzwart: black;
-  --verminderdezwart: rgb(24, 23, 23);
-  --puurwit: white;
-  --emitterkleurgrijs: rgb(136, 134, 134);
-  --handvattendooku: #191818;
-  --dookugrijs: rgb(42, 41, 41);
-  --anakingold: rgb(153, 153, 0);
+
   --gradientdarthmaul: linear-gradient(
     to left,
     #98948b 7%,    #000000 13%,
@@ -57,10 +58,10 @@
     );
 }
 
+
 /*************/
 /* CSS RESET */
 /*************/
-
 
 *,
 *::after,
@@ -83,9 +84,7 @@ body {
 @keyframes stars {
   0% {background-position: 0 0;}
 
-  100% {
-    background-position: 50em 50em;
-  }
+  100% {background-position: 50em 50em;}
 }
 
 section:first-of-type > img:first-of-type {
@@ -143,12 +142,8 @@ section article ul button {
 
 /* animation: 4s ease-in 1s 1 normal forwards whoom; */
 @keyframes whoom {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 /* animation: 8s ease-out 0s 1 whoom; toevoegen bij juiste element */
 
@@ -205,6 +200,7 @@ nav ul.burger li img {
   transform: scale(0.7);
 }
 
+/* Knop in het hemaburger menu */
 header ul li:nth-of-type(2) button {
   background: var(--puurwit);
 
@@ -233,9 +229,9 @@ main > section:nth-of-type(1) img[src=""] {
   display: none;
 }
 
-/*************/
-/*  BUTTONS  */
-/*************/
+/**********************/
+/*  Planeten buttons  */
+/**********************/
 
 @keyframes draaiend {
   0%    {transform: rotate(0deg);}
@@ -360,8 +356,9 @@ section article ul li:nth-of-type(4) button:hover {
   transform:rotate(360deg);
   transition:30s;
 }
+
 /**********************************************************/
-/* Algemene instelling teksten, sections en lists */
+/* Algemene instelling: teksten, sections en lists */
 /**********************************************************/
 
 h1 {
@@ -514,7 +511,7 @@ ol li:first-of-type article strong {
   top: 0em;
   z-index: 1;
 
-  background-color: rgb(53, 53, 53);
+  background-color: rgb(53, 53, 53);  /*deze kleur is een enkele keer gebruikt */
 
   border: 3px solid var(--puurzwart);
   border-radius: 0.25em;
@@ -580,7 +577,7 @@ ol li:first-of-type article div:nth-of-type(4) {
 
 ol li:first-of-type article button {
   position: relative;
-  background-color: rgb(153, 153, 0); /*wordt een enkele keer gebruikt */
+  background-color: rgb(153, 153, 0);   /*wordt een enkele keer gebruikt */
   height: 0.75em;
   width: 2em;
   border: 1px solid black;
@@ -591,7 +588,7 @@ ol li:first-of-type article button {
 /* Onderdeel aan de voorkant van de lightsaber */
 .bladespuit {
   position: relative;
-  background-color: rgb(54, 54, 54); /*wordt een enkele keer gebruikt */
+  background-color: rgb(54, 54, 54);    /*wordt een enkele keer gebruikt */
   height: 2em;
   width: 1em;
   bottom: 0em;
@@ -626,7 +623,7 @@ ol li:first-of-type article button {
 .bladespuit3 {
   position: relative;
   border: 1px solid var(--puurzwart);
-  background-color: rgb(88, 88, 88); /*wordt een enkele keer gebruikt */
+  background-color: rgb(88, 88, 88);    /*wordt een enkele keer gebruikt */
   height: 1.6em;
   width: 1.1em;
   bottom: -0.3em;
@@ -1321,9 +1318,9 @@ ol li:nth-of-type(5) img.firing {
   100% {filter: drop-shadow(none);}
 }
 
-/*****************************/
-/* Laatste saber: Kylo Ren */
-/*****************************/
+/*******************************/
+/* Vijfde lightsaber: Kylo Ren */
+/*******************************/
 
 ol li:nth-of-type(6) p {
   position: relative;
@@ -1569,17 +1566,6 @@ ol li:last-of-type strong.bouwen {
   100%  {width: 40em;}
 }
 
-/* @keyframes build {
-  0%    {transform: translateX(0em);}
-  16%   {transform: translateX(6.67em);}
-  32% 	{transform: translateX(13.34em);}
-  48%   {transform: translateX(20em);}
-  64%   {transform: translateX(26.7em);}
-  80%   {transform: translateX(33.3em);}
-  100%  {transform: translateX(40em);}
-} */
-
-
 /***********************/
 /* Footer instellingen */
 /***********************/
@@ -1615,7 +1601,7 @@ footer section img {
   }
 }
 
-@media (max-width:476px){
+@media (max-width:476px) {
       section:first-of-type > img:first-of-type{
       height:75em;
   }
