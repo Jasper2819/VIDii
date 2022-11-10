@@ -19,7 +19,7 @@ Blauw
 
 ![Afbeelding van een eerste schets voor mijn website](../../../../D:/documenten/GitHub/VIDii/readme-images/afbeelding_eersteschets_1.png "Afbeelding van een eerste schets voor mijn website")
 
-![Afbeelding van mijn eerste schetsen](../../../../D:/documenten/GitHub/VIDii/readme-images/afbeelding_eersteschets2.png "Afbeelding van mijn eerste schetsen voor mijn webiste")
+![Afbeelding van mijn eerste schetsen](../../../../D:/documenten/GitHub/VIDii/readme-images/afbeelding_eersteschets2.png "Afbeelding van mijn eerste schetsen voor mijn website")
 
 ![Schets van anakin's lightsaber](../../../../D:/documenten/GitHub/VIDii/readme-images/afbeelding_lightsaberschets.png "Schets van anakin's lightsaber")
 
@@ -61,7 +61,7 @@ Ik zit ook al na te denken over een opstart animatie. Dus als je de website aank
 
 Een Easter Egg kan een LEGO lightsabers zijn die ik toevoeg. Deze wordt natuurlijk niet in de films of dergelijke gebruikt, maar is wel een iconisch LEGO onderdeel dat elke Star Wars fan wel herkent. Verdere easter eggs zullen te maken hebben met geluiden of beelden uit de films en series van Star Wars.
 
-Als laatste punt is de achtergrond. Graag wil ik een achtergrond die past bij de lightsabers. Een goeie manier is het gebruik van sterretjes. Een animatie toevoegen aan de achtergrond maakt de webiste nog interessanter!
+Als laatste punt is de achtergrond. Graag wil ik een achtergrond die past bij de lightsabers. Een goeie manier is het gebruik van sterretjes. Een animatie toevoegen aan de achtergrond maakt de website nog interessanter!
 
 </details>
 
@@ -100,54 +100,71 @@ Ik heb vertrouwen in mijn website. Ik heb tot nu toe een goeie basis, iets waar 
   <summary>Samenvatting van feedback moment 2 (7-11-2022)</summary>
   
   ### Bevindingen:
+
   Vandaag had ik een feedbakc moment met Mila uit de klas. Nadat ik haar feedback had gegeven, vulde ze voor mij een beoordelingsformulier in. Ze omcirkelde op het begin meerdere malen 'ja'. Echter toen ze verder ging kwamen we bij het eerste punt van verbetering, en dat is dat de afbeeldingen (welke tevoorschijn komen als je op een planeet klikt) nog geen goeie verhoudingen hebben. Dit klopt aangezien dit afbeeldingen waren waarmee ik de functie aan het testen was. Ook de kwaliteit van de afbeeldingen mag een stuk beter.
 
   Als volgende punt was er aan te merken dat wel alles goed te bereiken was met de 'tab' toets, maar nog geen interactieve elementen bevatten. Ik mag ook meer gebruik gaan maken van een bijvoorbeeld `:hover` of `:active`. Op de achterkant van het formulier ging ze verder met de feedback en vond eigenlijk dat mijn HTML en CSS er keurig uitzagen. Wel raadde ze mij aan om al mijn variabelen in JAVA bovenaan te zetten om dit overzichtelijk te houden. Verder het ordenen van properties binnenin CSS elementen moest wat consistenter en ik moet meer gebruik maken van `em` of `%` in plaats van `px`.
 
+  Het laatste wat Mila als opmerking had was het juist vermelden van de bronnen. Gebruik de APA-methode als er auteursrechten op een afbeelding zitten, en anders netjes de site vermelden waar je iets vandaan hebt gehaald.
+
 #### oplossing:
+
+  ALs reactie op de feedback ben ik mijn CSS bestand in gedoken en heb ik veel onnodige stukjes code opgeruimd. Dit heb ik ook gedaan voor mijn HTML en JAVA. In JAVA heb ik echter sommige `var` wel bij de functions laten staan. Dit doe ik om mijzelf neit in de war te brengen waar wat bij hoort en zo houd ik het voor mijzelf overzichtelijk. Verder heb ik voor bepaalde buttons een `:hover` state aangebracht dat ervoor zorgt dat het duidelijk is voor de gebruiker wanneer hij met zijn muis of tab op een knop staat. En om bepaalde buttons op de lightsabers makkelijk klikbaar te maken, heb ik ervoor gezorgd dat de muis geen _starfighter_ meer is als je met je muis over een knop gaat, om het klikken op een button makkelijker te maken. Verder heb ik zo veel mogelijk `px` weggehaald en vervangen voor `em`. Ook heb ik meerdere `var(--)` toegevoegd om te zorgen dat veel butons, lightsabers en dergeljike dezelfde kleuren hebben om consistentie in mijn website te behouden.
+
+  ![Afbeelding van feedback moment 2, een ingevuld beoordelingsformulier door Mila](../../../../D:/documenten/GitHub/VIDii/readme-images/feedback_moment_2.jpg "Afbeelding van feedback moment 2, een ingevuld beoordelingsformulier door Mila")
 
 </details>
 
 ## Voortgang/Feedback 3
 
 <details>
-  <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
+  <summary>Samenvatting van feedback moment 3 (9-11-2022)</summary>
   
-  ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  ### Bevindingen:
+  Feedback 3 is uitgevoerd met Stela. We hadden een beoordelingsformulier erbij gepakt welke op DLO staat en die zijn we afgegaan om elkaar complimenten en tips te geven.
+
+  Om te beginnen een paar punten die zij goed vond. Mijn website had zeker een eigen karakter en thema en vele buttons en achtergronden passen goed bij elkaar. Het is ook duidelijk waar je op kan klikken en super leuk dat de achtergrond een animatie heeft, alsof je door de ruimte vliegt. De cursor heeft een leuke afbeelding, alsof je zelf met je muis door de website vliegt. Als volgt zijn de animaties van de planeten is een goeie toevoeging. Dit geeft de website meer interactie. Als laatste is de website zo goed als responsive. Dit moet niet alleen voor de eindbeoordeling, ook is dit handig als je twee schermen open wilt hebben op een laptop dat alles er nog redelijk normaal uitziet.
+
+  Naast deze pluspunten zijn de teksten ook goed leesbaar. Stela kon via github op haar eigen laptop mijn gekozen font openen en deze werden op de juiste manier getoond op haar scherm.
+
+  Door naar de minpunten/tips. Stela vond dat er tekst onder de lightsabers moest komen. Je wil natuurlijk wel een beetje informatie lezen over van wie de saber is en dergelijke. Ze gaf ook het idee om de naam van de planeet te laten zien wanneer je op de specifieke planeet klikt. Verder in mijn CSS bestand moest ik meer gebruik gaan maken van `var(--)` om te zorgen dat er geen herhaling zat in kleuren of andere properties. Naast deze tips over de website, gaf ze nog tips over mijn readme: meer afbeeldingen toevoegen en de feedback en reflectie uitwerken.
 
 #### oplossing:
+ Al met al zeer goede feedback. Ik heb hier zeker wat aan gehad en heb veel punten verbeterd. Daarnaast leer ik hier weer van en kan ik de kennis gebruiken in de volgende vakken van deze minor.
 
-Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+ Ik heb als eerste van vrijwel alle kleuren een variabele aangemaakt en bovenaan in mijn CSS bij de `:root` neegezet. Ik merkte dat het veel ahndiger is om variabele te gebruiken dan telkens de kleur op te zoeken, te kopieëren en te plakken. Vervolgens heb ik gezorgd dat als je op een bepaalde planeet klikt, dat de naam van deze planeet erboven in beeld komt. Hetzelfde met de informatieve tekst onder de lightsabers. Zodra je op de button klikt van de lightsaber, verschijnt er tekst onder. Wanneer de gebruiker eroverheen hovered wordt deze tekst groter en wordt de achtergrond kleur zwart voor optimale leesbaarheid.
 
-### Bevinding 2:
+ Er waren ook enkele aanpassingen nodig om de afbeeldingen zichtbaar te maken op github. Deze werkte namelijk niet. Stela heeft mij uitgelegt hoe het zit met een `src = ""`aanwijzen in HTML. Dit heb ik aangepast en de afbeeldingen zijn nu zichtbaar als iemand op de link klikt op github.
 
-Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
-
-#### oplossing:
-
-Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
-### Bevinding 3:
-
-...
+ Zie de afbeelding hieronder voor de feedback die ik van Stela kreeg.
+ ![Afbeelding van een papier met erop feedback gekregen van Stela](../../../../D:/documenten/GitHub/VIDii/readme-images/feedback_moment_3.jpg "Afbeelding van een papier met erop feedback gekregen van Stela")
 
 </details>
 
 ## Reflectie
 
-<details>
-  <summary>Mijn eindresultaat & persoonlijke ontwikkeling</summary>
+<details open>
+  <summary>Mijn eindresultaat, mening over het vak & persoonlijke ontwikkeling</summary>
 
-### Je uitkomst - karakteristiek screenshot(s):
+### Mijn uitkomst:
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="final ontwerp">
+Om te beginnen ben ik zeer tevreden met mijn resultaat. Toen ik aan dit vak begon had ik enorme stress, omdat ik niet wist of ik wel zelf een website kon maken. Ik had weinig tot geen kennis over HTML, CSS en JAVA en maakte me zorgen dat ik dit vak niet zou gaan halen. Gelukkig merkte ik dat ik enorm snel leerde. De lesstof en kennis kreeg ik van iedereen als ik ernaar vroeg en gelukkig is er op het internet super veel te vinden over van alles. Zo heb ik de eerste week met een goed gevoel afgerond. Uiteraard bleven er punten waarop ik mij irriteerde. Iets wilde niet werken of ik begreep echt niet hoe iets moest. Maar als ik het dan vroeg, werd het mij duidelijk gemaakt en kon ik weer door. Ook schreef ik veel informatie op in een notitie boekje, zodat ik er altijd op terug kon komen. Zie hieronder afbeeldingen van hoe mijn eindresultaat eruitziet:
 
-### Dit ging goed/Heb ik geleerd:
+![Afbeelding van mijn website eindresultaat](../../../../D:/documenten/GitHub/VIDii/readme-images/websiteafbeeldingheader.png)
 
-Korte omschrijving met plaatje(s)
+![Afbeelding van mijn website eindresultaat](../../../../D:/documenten/GitHub/VIDii/readme-images/websiteafbeeldingfooter.png)
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+### Dit ging goed/heb ik geleerd:
+
+De afgelopen twee weken heb ik ontzettend veel geleerd:
+
+- Ik heb geleerd hoe je een website opbouwt met de juiste HTML tags en waar je deze plaatst (header, body, footer).
+- Het linken van afbeeldingen binnen HTML en CSS. Zo heb je in je HTML geen `../` nodig, maar in je CSS wle omdat je naar een andere map wilt verwijzen.
+- Dat een button niet zomaar un een unordered list mag staan. Altijd in een list item plaatsen.
+- Het semantisch maken van je code is van hoog belang. Er zijn enkele regeltjes die ervoor zorgen dat alles er georden en netjes uitziet. Niet alleen handig voor jezelf, maar ook voor andere personen die graag in je code willen kijken voor inspiratie of andere redenen.
+- Met `display: grid;` en `display: flex` zorg je ervoor dat je website de juiste structuur krijgt. Alles netjes onder elkaar centreren, marges tussen de list items en meer. Zo zorg je voor consistentie in je website.
+
+![Afbeelding van een stukje html uit de website code](../../../../D:/documenten/GitHub/VIDii/readme-images/nettehtml.png "Nette HTML zorgt ervoor dat je website overzichtleijk blijft en dat de code goed te lezen is voor andere programmeurs")
 
 ### Dit was lastig/Is niet gelukt:
 
