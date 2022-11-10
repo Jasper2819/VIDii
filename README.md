@@ -19,9 +19,13 @@ Afbeelding van een eerste schets voor mijn website
 
 <img src="readme-images/afbeelding_eersteschets_1.png" width="375px" alt="Afbeelding van een eerste schets voor mijn website">
 
-![Afbeelding van mijn eerste schetsen](../../../../D:/documenten/GitHub/VIDii/readme-images/afbeelding_eersteschets2.png "Afbeelding van mijn eerste schetsen voor mijn website")
+<img src="readme-images/afbeelding_eersteschets2.png" width="375px" alt="Afbeelding van een eerste schets voor mijn website">
 
-![Schets van anakin's lightsaber](../../../../D:/documenten/GitHub/VIDii/readme-images/afbeelding_lightsaberschets.png "Schets van anakin's lightsaber")
+<img src="readme-images/afbeelding_lightsaberschets.png_.png" width="375px" alt="Schets van anakin's lightsaber">
+
+<img src="readme-images/lightsaberschets2.png" width="375px" alt="Afbeelding van een tweede schets van een lightsaber">
+
+
 
 ![Schets van een tweede lightsaber](../../../../D:/documenten/GitHub/VIDii/readme-images/lighstaberschets2.png "Schets van een tweede lightsaber")
 
