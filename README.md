@@ -222,8 +222,7 @@ Conclusie: een leuk vak waar je met een eigen, favoriete gekozen product veel le
 ## Bronnenlijst
 
 <details>
-
-<summary>Gebruikte bronnen voor de website</summary>
+  <summary>Gebruikte bronnen voor de website</summary>
 
 1. Afbeelding voor de favicon: <https://www.freeimages.com/nl/psd/light-saber-handle-psd-5149199?ref=vectorhq> (Auteursrechtvrije afbeeldingen).
 
