@@ -109,7 +109,7 @@ Ik heb vertrouwen in mijn website. Ik heb tot nu toe een goeie basis, iets waar 
 
   ALs reactie op de feedback ben ik mijn CSS bestand in gedoken en heb ik veel onnodige stukjes code opgeruimd. Dit heb ik ook gedaan voor mijn HTML en JAVA. In JAVA heb ik echter sommige `var` wel bij de functions laten staan. Dit doe ik om mijzelf neit in de war te brengen waar wat bij hoort en zo houd ik het voor mijzelf overzichtelijk. Verder heb ik voor bepaalde buttons een `:hover` state aangebracht dat ervoor zorgt dat het duidelijk is voor de gebruiker wanneer hij met zijn muis of tab op een knop staat. En om bepaalde buttons op de lightsabers makkelijk klikbaar te maken, heb ik ervoor gezorgd dat de muis geen _starfighter_ meer is als je met je muis over een knop gaat, om het klikken op een button makkelijker te maken. Verder heb ik zo veel mogelijk `px` weggehaald en vervangen voor `em`. Ook heb ik meerdere `var(--)` toegevoegd om te zorgen dat veel butons, lightsabers en dergeljike dezelfde kleuren hebben om consistentie in mijn website te behouden.
 
-  ![Afbeelding van feedback moment 2, een ingevuld beoordelingsformulier door Mila](../../../../D:/documenten/GitHub/VIDii/readme-images/feedback_moment_2.jpg "Afbeelding van feedback moment 2, een ingevuld beoordelingsformulier door Mila")
+  <img src="readme-images/feedback_moment_2.jpg" width="375px" alt="Afbeelding van feedback moment 2, een ingevuld beoordelingsformulier door Mila">
 
 </details>
 
