@@ -124,7 +124,7 @@ buttonkyloren.addEventListener("click", function () {
 
 //Endor laten verschijnen
 function veranderendor() {
-  headerBackground.src = "../images/endor4k.png";
+  headerBackground.src = "images/endor4k.png";
   headerBackground.classList.add("veranderendor");
   console.log("endor is nu te zien, ook dankzij jeff ;)");
 
@@ -138,7 +138,7 @@ function veranderendor() {
 
 // Tatooine laten verschijnen
 function veranderwoestijn() {
-  headerBackground.src = "../images/tatooinedesert.jpg";
+  headerBackground.src = "images/tatooinedesert.jpg";
   console.log("tatooine moet te zien zijn. En ja: made by jeff");
 
   if (headerBackground.classList.contains != "veranderwoestijn") {
@@ -152,7 +152,7 @@ function veranderwoestijn() {
 
 // Felucia laten verschijnen
 function veranderfelucia() {
-  headerBackground.src = "../images/felucia4k.jpg";
+  headerBackground.src = "images/felucia4k.jpg";
 
   if (headerBackground.classList.contains != "veranderfelucia") {
     //!= is niet gelijk aan
@@ -166,7 +166,7 @@ function veranderfelucia() {
 
 //Endor laten verschijnen
 function verandernaboo() {
-  headerBackground.src = "../images/naboo4k.jpg";
+  headerBackground.src = "images/naboo4k.jpg";
 
   if (headerBackground.classList.contains != "verandernaboo") {
     //!= is niet gelijk aan
