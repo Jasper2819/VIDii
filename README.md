@@ -41,15 +41,18 @@ Afbeelding van een eerste schets voor mijn website
 
 Om de website te maken moet ik wel het een en ander over lightsabers te weten komen. Gelukkig ben ik een grote Star Wars fan, dus dat zit al goed. Als eerste is het belangrijk om te zeggen dat lightsaber niet een "evolutie" of een "tijdlijn" kennen. Ze zijn niet persee beter geworden over de jaren heen. Daarnaast spreken we altijd van _A long time ago in a galaxy far far away..._  dus hebben we het ook over een ficiteve tijd. Ik heb er daarom voor gekozen om een "tijdlijn" aan te houden hoe de lightsabers voor komen in de films of series op chronologische volgorde (beginned bij Episode I: A Phantom Menace naar Episode IX: The RIse of Skywalker).
 
-De eerste lightsaber die ik heb gekozen is die van Anakin. In de Star Wars universe is hij een zeer belangrijk personage en mag zeker niet ontbreken. Eigenlijk gaan de films vooral om hem en zijn familie. Zijn lightsaber heeft hij zelf gemaakt en is al door verschillende personages gebruikt. Hij is een keer wkijtgeraakt, gevonden, gebroken en weer gerepareerd. Vele mensen hebben hun leven verloren aan deze lightsaber.
+De allereerste schetsen van Star Wars tonen dat de lightsaber neit exclusief voor Jedi waren. De gevreesde _stormtroopers_ van het keizerrijk gebruikte ze als wapen tegen hun vijanden (zie afbeelding hieronder). Echter wilde George Lucas (bedenker van Star Wars) dat de lightsaber een meer speciale betekenis zou krijgen, een meer mysterieus gevoel. Daarom werden ze uitsluitend door Dart Vader en Luke Starkiller gebruikt (ja, dat was eerst de naam voor Luke Skywalker). In de concept schetsen van Ralph McQuarrie is te zien dat de lightsaber een groot handvat bevat en eruit kom een lange staaf van licht. Zo is het idee gaan groeien en zijn de lightsabers geworden hoe we ze nu kennen.
+
+<img src="readme-images/starwarsconceptart.png" width="375px" alt="Afbeelding van een concept schets van de lightsaber">
+_Bron afbeelding: <https://www.cbr.com/star-wars-new-hope-concept-art-pieces/>
 
 Waaruit bestaat een lightsaber eigenlijk? Zie de afbeelding hieronder, en in het kort: Binnenin de lightsaber zit een _Kyber Crystal_. Dit is het hart van de saber wat zorgt voor de kracht van het zwaard. De _Kyber Crystal_ zelf heeft een diepe connectie met de eigenaar van de lightsaber door de _Force_. Wordt een _Kyber Crystal_ vernietig of beschadigd, dan kan dat enorme explosieve krachten opleveren. Maar waar komen al die verschillende kleuren van lightsabers vandaan? Dat heeft te maken met de emotionele band tussen de dragen en de _Crystal_. Zo is er groen en blauw, maar ook paars en geel. De Sith gebruikten lightsabers met een lightsaberkristal dat zij hadden misvormd van kleur. Hierdoor ging de _Kyber Crystal_ bloeden en werd de blade rood.
 
 <img src="readme-images/lightsaberconstruction.png" width="375px" alt="Een exploded-view van de onderdelen van een lightsaber">
 
-_Bron afbeelding: <https://starwars.fandom.com/wiki/Lightsaber_hilt/Legends>_
+_Bron afbeelding: <https://starwars.fandom.com/wiki/Lightsaber_hilt/Legends>, originele schetsen door Ralph McQuarrie_
 
-Er zijn ontzettend veel varianten van de lightsaber. Elke Jedi heeft zijn eigen variant en maakt hem naar eigen wens zodat hij perfect past bij zijn vechtstijl, cultuur of smaak. ZO zijn er de typische rechte lightsabers, zoals Anakin Obi-wan, welke we zien in de eerste film Episode I: The Phantom Menace. Daarin zien we ook een dubbele, rechte lightsaber namelijk die van Darth Maul met een rode kleur. Maar het kan nog gekker. Zo zijn er kromme lightsabers als die van Count Dooku in Episode II en III. Verder in de Star Wars
+Er zijn ontzettend veel varianten van de lightsaber. Elke Jedi heeft zijn eigen variant en maakt hem naar eigen wens zodat hij perfect past bij zijn vechtstijl, cultuur of smaak. ZO zijn er de typische rechte lightsabers, zoals Anakin Obi-wan, welke we zien in de eerste film Episode I: The Phantom Menace. Daarin zien we ook een dubbele, rechte lightsaber namelijk die van Darth Maul met een rode kleur. Maar het kan nog gekker. Zo zijn er kromme lightsabers als die van Count Dooku in Episode II en III. Verder in de Star Wars series zijn er zelfs dubbele, roterende lightsabers. Er bestaan zelfs lightsaber zwepen! De Star Wars universe is best gek.
 
 
 
