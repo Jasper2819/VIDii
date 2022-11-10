@@ -44,20 +44,18 @@ Om de website te maken moet ik wel het een en ander over lightsabers te weten ko
 De allereerste schetsen van Star Wars tonen dat de lightsaber neit exclusief voor Jedi waren. De gevreesde _stormtroopers_ van het keizerrijk gebruikte ze als wapen tegen hun vijanden (zie afbeelding hieronder). Echter wilde George Lucas (bedenker van Star Wars) dat de lightsaber een meer speciale betekenis zou krijgen, een meer mysterieus gevoel. Daarom werden ze uitsluitend door Dart Vader en Luke Starkiller gebruikt (ja, dat was eerst de naam voor Luke Skywalker). In de concept schetsen van Ralph McQuarrie is te zien dat de lightsaber een groot handvat bevat en eruit kom een lange staaf van licht. Zo is het idee gaan groeien en zijn de lightsabers geworden hoe we ze nu kennen.
 
 <img src="readme-images/starwarsconceptart.png" width="375px" alt="Afbeelding van een concept schets van de lightsaber">
-_Bron afbeelding: <https://www.cbr.com/star-wars-new-hope-concept-art-pieces/>
+
+_Bron afbeelding: <https://www.cbr.com/star-wars-new-hope-concept-art-pieces/>, originele schetsen door Ralph McQuarrie_
 
 Waaruit bestaat een lightsaber eigenlijk? Zie de afbeelding hieronder, en in het kort: Binnenin de lightsaber zit een _Kyber Crystal_. Dit is het hart van de saber wat zorgt voor de kracht van het zwaard. De _Kyber Crystal_ zelf heeft een diepe connectie met de eigenaar van de lightsaber door de _Force_. Wordt een _Kyber Crystal_ vernietig of beschadigd, dan kan dat enorme explosieve krachten opleveren. Maar waar komen al die verschillende kleuren van lightsabers vandaan? Dat heeft te maken met de emotionele band tussen de dragen en de _Crystal_. Zo is er groen en blauw, maar ook paars en geel. De Sith gebruikten lightsabers met een lightsaberkristal dat zij hadden misvormd van kleur. Hierdoor ging de _Kyber Crystal_ bloeden en werd de blade rood.
 
 <img src="readme-images/lightsaberconstruction.png" width="375px" alt="Een exploded-view van de onderdelen van een lightsaber">
 
-_Bron afbeelding: <https://starwars.fandom.com/wiki/Lightsaber_hilt/Legends>, originele schetsen door Ralph McQuarrie_
+_Bron afbeelding: <https://starwars.fandom.com/wiki/Lightsaber_hilt/Legends>_
 
 Er zijn ontzettend veel varianten van de lightsaber. Elke Jedi heeft zijn eigen variant en maakt hem naar eigen wens zodat hij perfect past bij zijn vechtstijl, cultuur of smaak. ZO zijn er de typische rechte lightsabers, zoals Anakin Obi-wan, welke we zien in de eerste film Episode I: The Phantom Menace. Daarin zien we ook een dubbele, rechte lightsaber namelijk die van Darth Maul met een rode kleur. Maar het kan nog gekker. Zo zijn er kromme lightsabers als die van Count Dooku in Episode II en III. Verder in de Star Wars series zijn er zelfs dubbele, roterende lightsabers. Er bestaan zelfs lightsaber zwepen! De Star Wars universe is best gek.
 
-
-
-
-
+Ik heb hier thuis boeken over Star Wars en er is zelfs een gehele Star Wars wikipedia (toepasselijk wookiepedia genoemd) waar ik mijn informatie vandaan zal halen. Alle bronnen die ik gebruik tijdens dit project zal ik onderaan deze readme zetten.
 
 </details>
 
