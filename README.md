@@ -46,6 +46,13 @@ De eerste lightsaber die ik heb gekozen is die van Anakin. In de Star Wars unive
 Waaruit bestaat een lightsaber eigenlijk? Zie de afbeelding hieronder, en in het kort: Binnenin de lightsaber zit een _Kyber Crystal_. Dit is het hart van de saber wat zorgt voor de kracht van het zwaard. De _Kyber Crystal_ zelf heeft een diepe connectie met de eigenaar van de lightsaber door de _Force_. Wordt een _Kyber Crystal_ vernietig of beschadigd, dan kan dat enorme explosieve krachten opleveren. Maar waar komen al die verschillende kleuren van lightsabers vandaan? Dat heeft te maken met de emotionele band tussen de dragen en de _Crystal_. Zo is er groen en blauw, maar ook paars en geel. De Sith gebruikten lightsabers met een lightsaberkristal dat zij hadden misvormd van kleur. Hierdoor ging de _Kyber Crystal_ bloeden en werd de blade rood.
 
 <img src="readme-images/lightsaberconstruction.png" width="375px" alt="Een exploded-view van de onderdelen van een lightsaber">
+Bron afbeelding: <https://starwars.fandom.com/wiki/Lightsaber_hilt/Legends>
+
+Er zijn ontzettend veel varianten van de lightsaber. Elke Jedi heeft zijn eigen variant en maakt hem naar eigen wens zodat hij perfect past bij zijn vechtstijl, cultuur of smaak. ZO zijn er de typische rechte lightsabers, zoals Anakin Obi-wan, welke we zien in de eerste film Episode I: The Phantom Menace. Daarin zien we ook een dubbele, rechte lightsaber namelijk die van Darth Maul met een rode kleur. Maar het kan nog gekker. Zo zijn er kromme lightsabers als die van Count Dooku in Episode II en III. Verder in de Star Wars
+
+
+
+
 
 
 </details>
