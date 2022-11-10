@@ -194,7 +194,7 @@ De afgelopen twee weken heb ik ontzettend veel geleerd:
 
 ### Dit was lastig/is niet gelukt
 
-Uiteraard zijn er momenten geweest dat ik het lastig had. Zo was het zeker de eerste week. Ik moets contstant vragen stellen en onderzoek doen op het internet om uit te zoeken hoe ik moest doen wat ik wilde doen. Daarnaast kwam er bij dat ik niet, zoals de CMD studenten, weet wat wel en niet mag/kan met coderen. Ik merkte dat ik na verloop van tijd meer kennis kreeg, en hierdoor in de gaten kreeg wat er allemaal mogelijk was om toe doen met mij website. Er waren veel ideeën die ik graag wilde uitvoeren, maar door de gelimiteerde kennis die ik heb kon ik die niet uitvoeren. Ik weet zeker dat als we een extra week hadden gehad voor deze opdracht, ik nog meer leuke dingen had kunnen toevoegen aan de website.
+Uiteraard zijn er momenten geweest dat ik het lastig had. Zo was het zeker de eerste week. Ik moest contstant vragen stellen en onderzoek doen op het internet om uit te zoeken hoe ik moest doen wat ik wilde doen. Daarnaast kwam er bij dat ik niet, zoals de CMD studenten, weet wat wel en niet mag/kan met coderen. Ik merkte dat ik na verloop van tijd meer kennis kreeg, en hierdoor in de gaten kreeg wat er allemaal mogelijk was om toe doen met mij website. Er waren veel ideeën die ik graag wilde uitvoeren, maar door de gelimiteerde kennis die ik heb kon ik die niet uitvoeren. Ik weet zeker dat als we een extra week hadden gehad voor deze opdracht, ik nog meer leuke dingen had kunnen toevoegen aan de website.
 
 Paar voorbeelden zijn:
 
