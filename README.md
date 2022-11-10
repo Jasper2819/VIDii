@@ -12,7 +12,7 @@ Blauw
 
 # Mijn progressie
 Afbeelding van een eerste schets voor mijn website
-<details open>
+<details>
   <summary>De eerste versie/schets van je ontwerp & je persoonlijke uitdaging</summary>
 
 ## Een paar van de schetsen gemaakt tijdens de afgelopen 2 weken:
@@ -49,7 +49,7 @@ Afbeelding van een eerste schets voor mijn website
 - LEGO Star Wars lightsaber toevoegen.
 - Achtergrond zwart met wat fonkelende sterretjes
 
-### oplossingen:
+### Oplossingen:
 
 Tijdens de feedback van een andere student, heb ik veel nieuwe en goeie ideeën gekregen. Zo moet ik goed gaan nadenken waar ik mijn informatie neerzet. Dit wil ik graag interactief houden, dus de plek is belangrijk. Daarnaast moet ik een besluit nemen hoe ik de hele pagina wil gaan vullen. Naar beneden scrollen of links en rechts? Er moet ook duidelijke feedback komen voor de gebruiker als hij/zij op een bepaalde knop drukt. Dit kan visueel gebeuren door een zichtbare verandering of op een andere manier.
 
@@ -105,7 +105,7 @@ Ik heb vertrouwen in mijn website. Ik heb tot nu toe een goeie basis, iets waar 
 
   Het laatste wat Mila als opmerking had was het juist vermelden van de bronnen. Gebruik de APA-methode als er auteursrechten op een afbeelding zitten, en anders netjes de site vermelden waar je iets vandaan hebt gehaald.
 
-#### oplossing:
+#### Oplossing:
 
   ALs reactie op de feedback ben ik mijn CSS bestand in gedoken en heb ik veel onnodige stukjes code opgeruimd. Dit heb ik ook gedaan voor mijn HTML en JAVA. In JAVA heb ik echter sommige `var` wel bij de functions laten staan. Dit doe ik om mijzelf neit in de war te brengen waar wat bij hoort en zo houd ik het voor mijzelf overzichtelijk. Verder heb ik voor bepaalde buttons een `:hover` state aangebracht dat ervoor zorgt dat het duidelijk is voor de gebruiker wanneer hij met zijn muis of tab op een knop staat. En om bepaalde buttons op de lightsabers makkelijk klikbaar te maken, heb ik ervoor gezorgd dat de muis geen _starfighter_ meer is als je met je muis over een knop gaat, om het klikken op een button makkelijker te maken. Verder heb ik zo veel mogelijk `px` weggehaald en vervangen voor `em`. Ook heb ik meerdere `var(--)` toegevoegd om te zorgen dat veel butons, lightsabers en dergeljike dezelfde kleuren hebben om consistentie in mijn website te behouden.
 
@@ -127,7 +127,7 @@ Ik heb vertrouwen in mijn website. Ik heb tot nu toe een goeie basis, iets waar 
 
   Door naar de minpunten/tips. Stela vond dat er tekst onder de lightsabers moest komen. Je wil natuurlijk wel een beetje informatie lezen over van wie de saber is en dergelijke. Ze gaf ook het idee om de naam van de planeet te laten zien wanneer je op de specifieke planeet klikt. Verder in mijn CSS bestand moest ik meer gebruik gaan maken van `var(--)` om te zorgen dat er geen herhaling zat in kleuren of andere properties. Naast deze tips over de website, gaf ze nog tips over mijn readme: meer afbeeldingen toevoegen en de feedback en reflectie uitwerken.
 
-#### oplossing:
+#### Oplossingen:
  Al met al zeer goede feedback. Ik heb hier zeker wat aan gehad en heb veel punten verbeterd. Daarnaast leer ik hier weer van en kan ik de kennis gebruiken in de volgende vakken van deze minor.
 
  Ik heb als eerste van vrijwel alle kleuren een variabele aangemaakt en bovenaan in mijn CSS bij de `:root` neegezet. Ik merkte dat het veel ahndiger is om variabele te gebruiken dan telkens de kleur op te zoeken, te kopieëren en te plakken. Vervolgens heb ik gezorgd dat als je op een bepaalde planeet klikt, dat de naam van deze planeet erboven in beeld komt. Hetzelfde met de informatieve tekst onder de lightsabers. Zodra je op de button klikt van de lightsaber, verschijnt er tekst onder. Wanneer de gebruiker eroverheen hovered wordt deze tekst groter en wordt de achtergrond kleur zwart voor optimale leesbaarheid.
