@@ -16,7 +16,7 @@ Afbeelding van een eerste schets voor mijn website
 <details>
   <summary>De eerste versie/schets van je ontwerp & je persoonlijke uitdaging</summary>
 
-## Een paar van de schetsen gemaakt tijdens de afgelopen 2 weken
+## Een paar van de vele schetsen die ik maakte voor de website
 
 <img src="readme-images/afbeelding_eersteschets_1.png" width="375px" alt="Afbeelding van een eerste schets voor mijn website">
 
@@ -179,6 +179,20 @@ Paar voorbeelden zijn:
 - De animatie van de lightsaber van Dooku had ik nog graag goed willen maken. Deze verloopt nu niet geheel zoals ik wil en had beter gekund.
 
 </details>
+
+### Conclusie
+
+Terugkomend op de ambities die ik heb geschreven bovenaan deze readme onder _persoonlijke uitdaging_:
+
+- _Ik wil werken aan het beter begrijpen en gebruiken van HTML en CSS_
+- _Ik vind het belangrijk om een beter inzicht te krijgen in hoe de verschillende CSS elementen gebruikt kunnen worden om tot een gewenst resultaat te komen_.
+- _Ik wil mijn kennis over het gebruik van code verbeteren om dit later te kunnen toepassen op eigen projecten_.
+
+Als er iets is gelukt dan is dat wel het beter begrijpen van HTML, CSS en JAVA. Ik heb de afgelopen twee weken ontzettend veel lesstof gekregen die ik meteen kon toepassen. Hierdoor leerde ik meteen over de verschillende elementen en tags die er bestaan om je website helemaal te krijgen hoe je dat wilt. Toch heb ik ook iets toegepast van mijn eigen studie _Engineering: Product Ontwerpen_ en dat is het schetsen en tekenen. Ik zag veel studenten uit de klas op Miro werken of meteen aan de slag gaan. Ik vind het persoonlijk beter om op papier een stel schetsen te maken van je idee en dat vervolgens op de computer uit te werken. Zo zorg ik ervoor dat ik het op mijn computer qua code netjes houd, terwijl mijn notitie boek vol staat met informatie en aantekeningen.
+
+De opdracht vond ik leuk om te doen. Ik ben een enorm grote Star Wars fan en vond het geweldig toen de lightsaber beschikbaar was om te kiezen voor dit project. Ik heb met veel plezier de website zitten maken en heb veel moeten lachen om de grapjes die ik erin heb verwerkt. Een website maken over je favoriete onderwerp en er meteen over leren is dé perfecte combinatie. Naast de leuke opdracht vond ik de sfeer in de klas deze twee weken best fijn. Iedereen hielp elkaar en het voelde niet beschamend om een vraag te stellen aan iemand. Ik wil graag de student assistent Jeffrey nog bedanken voor de vele hulp die hij mij heeft gegeven. Zonder hem was mijn site denk ik een kleine rommel geweest. Ik heb enorm veel geleerd door Jeffrey was super fijn is.
+
+Conclusie: een leuk vak waar je met een eigen, favoriete gekozen product veel leert over HTML, CSS en JAVA samen met gezellige klasgenoten.
 
 ## Bronnenlijst
 
