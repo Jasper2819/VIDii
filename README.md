@@ -32,10 +32,12 @@ Afbeelding van een eerste schets voor mijn website
 - Ik vind het belangrijk om een beter inzicht te krijgen in hoe de verschillende CSS elementen gebruikt kunnen worden om tot een gewenst resultaat te komen.
 - Ik wil mijn kennis over het gebruik van code verbeteren om dit later te kunnen toepassen op eigen projecten.
 
-</details open>
+</details>
+
+## Onderzoek vooraf
 
 <details>
-## Onderzoek vooraf
+  <summary>Onderzoek naar de lightsaber</summary>
 
 Om de website te maken moet ik wel het een en ander over lightsabers te weten komen. Gelukkig ben ik een grote Star Wars fan, dus dat zit al goed. Als eerste is het belangrijk om te zeggen dat lightsaber niet een "evolutie" of een "tijdlijn" kennen. Ze zijn niet persee beter geworden over de jaren heen. Daarnaast spreken we altijd van _A long time ago in a galaxy far far away..._  dus hebben we het ook over een ficiteve tijd. Ik heb er daarom voor gekozen om een "tijdlijn" aan te houden hoe de lightsabers voor komen in de films of series op chronologische volgorde (beginned bij Episode I: A Phantom Menace naar Episode IX: The RIse of Skywalker).
 
