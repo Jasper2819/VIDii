@@ -21,7 +21,7 @@ Afbeelding van een eerste schets voor mijn website
 
 <img src="readme-images/afbeelding_eersteschets2.png" width="375px" alt="Afbeelding van een eerste schets voor mijn website">
 
-<img src="readme-images/afbeelding_lightsaberschets.png_.png" width="375px" alt="Schets van anakin's lightsaber">
+<img src="readme-images/afbeelding_lightsaberschets.png" width="375px" alt="Schets van anakin's lightsaber">
 
 <img src="readme-images/lightsaberschets2.png" width="375px" alt="Afbeelding van een tweede schets van een lightsaber">
 
